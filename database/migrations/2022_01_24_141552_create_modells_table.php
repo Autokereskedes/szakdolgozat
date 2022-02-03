@@ -14,13 +14,16 @@ class CreateModellsTable extends Migration
     public function up()
     {
         Schema::create('modells', function (Blueprint $table) {
-            $table->string('modell', 30) -> primary();
-            $table->int('kivitel');
-            $table->string('motor',30); 
-            $table->int('alapár'); 
-            $table->int('hitel'); 
+            $table->char('modell', 30) -> primary();
+            $table->Integer('kivId')->unsigned();
+            $table->foreign('kivId')->references('kivId')->on('kivitels');
+            $table->char('motor',30);
+            $table->foreign('motor')->references('motor')->on('motors');
+            $table->integer('alapár'); 
+            $table->integer('hazon')->unsigned();
+            $table->foreign('hazon')->references('hazon')->on('hitels');
             $table->string('kép', 30); 
-            $table->timestamps(); 
+            $table->timestamps();
         });
     }
 

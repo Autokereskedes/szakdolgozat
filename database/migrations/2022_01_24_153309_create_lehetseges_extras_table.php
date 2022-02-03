@@ -14,9 +14,11 @@ class CreateLehetsegesExtrasTable extends Migration
     public function up()
     {
         Schema::create('lehetseges_extras', function (Blueprint $table) {
-            $table->string('modell',30); 
-            $table->string('dolog',30); 
-            $table->int('ár'); 
+            $table->char('modell',30)->primary();
+            $table->foreign('modell')->references('modell')->on('modells');
+            $table->string('dolog',30);
+            $table->foreign('dolog')->references('dolog')->on('dologs');
+            $table->integer('ár'); 
             $table->timestamps(); 
         });
     }

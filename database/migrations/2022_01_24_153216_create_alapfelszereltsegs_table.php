@@ -14,9 +14,11 @@ class CreateAlapfelszereltsegsTable extends Migration
     public function up()
     {
         Schema::create('alapfelszereltsegs', function (Blueprint $table) {
-            $table->string('modell',30);
-            $table->string('dolog',30);
-            $table->timestamps(); 
+            $table->char('modell',30)->primary();
+            $table->foreign('modell')->references('modell')->on('modells');
+            $table->char('dolog',30);
+            $table->foreign('dolog')->references('dolog')->on('dologs');
+            $table->timestamps();
         });
     }
 

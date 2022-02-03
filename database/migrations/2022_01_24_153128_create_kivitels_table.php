@@ -14,10 +14,10 @@ class CreateKivitelsTable extends Migration
     public function up()
     {
         Schema::create('kivitels', function (Blueprint $table) {
-            $table->string('kivitel',30); 
-            $table->string('kivnev',30); 
-            $table->int('ajtóSzáma'); 
-            $table->int('ülésSzáma'); 
+            $table->increments('kivId'); 
+            $table->char('kivNev',30); 
+            $table->tinyInteger('ajtóSzáma'); 
+            $table->tinyInteger('ülésSzáma'); 
             $table->timestamps(); 
         });
     }

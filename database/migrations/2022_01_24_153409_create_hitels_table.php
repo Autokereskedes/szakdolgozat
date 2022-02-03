@@ -14,10 +14,10 @@ class CreateHitelsTable extends Migration
     public function up()
     {
         Schema::create('hitels', function (Blueprint $table) {
-            $table->int('hazon'); 
-            $table->int('kezdőrészlet'); 
-            $table->string('futamidő',20); 
-            $table->int('szorzó'); 
+            $table->increments('hazon');
+            $table->integer('kezdőrészlet'); 
+            $table->char('futamidő',20); 
+            $table->integer('szorzó'); 
             $table->timestamps(); 
         });
     }

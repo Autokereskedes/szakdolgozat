@@ -14,13 +14,13 @@ class CreateFelhasznalosTable extends Migration
     public function up()
     {
         Schema::create('felhasznalos', function (Blueprint $table) {
-            $table->int('fazon'); 
-            $table->string('fnev',30); 
-            $table->string('jelszo',30); 
-            $table->string('email',30); 
-            $table->string('tel',30); 
-            $table->string('jogkör',30); 
-            $table->timestamps(); 
+            $table->increments('fazon');
+            $table->char('fnev',30); 
+            $table->char('jelszo',30); 
+            $table->string('email'); 
+            $table->char('tel'); 
+            $table->char('jogkör',6); 
+            $table->timestamps();
         });
     }
 

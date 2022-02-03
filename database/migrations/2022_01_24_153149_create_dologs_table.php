@@ -14,10 +14,10 @@ class CreateDologsTable extends Migration
     public function up()
     {
         Schema::create('dologs', function (Blueprint $table) {
-            $table->string('dolog',30); 
-            $table->string('tipus',30); 
-            $table->string('leírás',30); 
-            $table->int('ár'); 
+            $table->char('dolog',30)->primary(); 
+            $table->char('tipus',10); 
+            $table->text('leírás'); 
+            $table->integer('ár'); 
             $table->string('kép',30); 
             $table->timestamps(); 
         });

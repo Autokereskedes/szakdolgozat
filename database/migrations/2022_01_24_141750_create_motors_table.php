@@ -14,11 +14,11 @@ class CreateMotorsTable extends Migration
     public function up()
     {
         Schema::create('motors', function (Blueprint $table) {
-            $table->string('motor', 30) -> primary(); 
-            $table->string('üzemanyag',30); 
+            $table->char('motor',30) -> primary(); 
+            $table->char('üzemanyag',30); 
             $table->string('teljesítmény',30); 
             $table->string('váltó',10); 
-            $table->int('sebességfokozat',11);
+            $table->integer('sebességfokozat');
             $table->string('kép', 30);  
             $table->timestamps(); 
         });

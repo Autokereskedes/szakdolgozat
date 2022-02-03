@@ -14,8 +14,9 @@ class CreateRendeltExtrasTable extends Migration
     public function up()
     {
         Schema::create('rendelt_extras', function (Blueprint $table) {
-            $table->int('rendazon'); 
-            $table->string('dolog',30); 
+            $table->increments('rendExtrId'); 
+            $table->char('dolog',30);
+            $table->foreign('dolog')->references('dolog')->on('dologs');
             $table->timestamps(); 
         });
     }

@@ -14,15 +14,22 @@ class CreateRendeltAutosTable extends Migration
     public function up()
     {
         Schema::create('rendelt_autos', function (Blueprint $table) {
-            $table->int('rendazon'); 
-            $table->string('modell',30); 
-            $table->int('felhasználó'); 
-            $table->string('fényezésSzín',30); 
-            $table->string('beltérSzínAnyag',30); 
-            $table->int('összár'); 
-            $table->int('hitel'); 
+            $table->increments('rendazon'); 
+            $table->char('modell',30);
+            $table->foreign('modell')->references('modell')->on('modells');
+            $table->integer('rendExtrId')->unsigned(); 
+            $table->foreign('rendExtrId')->references('rendExtrId')->on('rendelt_extras'); 
+            $table->integer('fazon')->unsigned(); 
+            $table->foreign('fazon')->references('fazon')->on('felhasznalos'); 
+            $table->integer('fényId')->unsigned();
+            $table->foreign('fényId')->references('fényId')->on('fenyezes');
+            $table->integer('beltérId')->unsigned(); 
+            $table->foreign('beltérId')->references('beltérId')->on('belters'); 
+            $table->integer('összár'); 
+            $table->integer('hazon')->unsigned(); 
+            $table->foreign('hazon')->references('hazon')->on('hitels'); 
             $table->date('ajánlatDátum'); 
-            $table->string('státusz', 20); 
+            $table->char('státusz', 20); 
             $table->timestamps(); 
         });
     }

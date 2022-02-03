@@ -14,10 +14,10 @@ class CreateBeltersTable extends Migration
     public function up()
     {
         Schema::create('belters', function (Blueprint $table) {
-            $table->string('modell',30); 
-            $table->string('szin',30); 
-            $table->string('anyag',30); 
-            $table->int('ár'); 
+            $table->increments('beltérId'); 
+            $table->char('szin',30); 
+            $table->char('anyag',30); 
+            $table->integer('ár'); 
             $table->string('kép',30); 
             $table->timestamps(); 
         });
