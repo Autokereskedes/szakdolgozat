@@ -15,9 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-<<<<<<< Updated upstream
-});
-=======
 });
 
 Route::get('/index.html', function () {
@@ -26,4 +23,3 @@ Route::get('/index.html', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
->>>>>>> Stashed changes
