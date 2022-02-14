@@ -27,15 +27,31 @@ footer{
     grid-area:"f";
 }
 /*--------------GRID--------------*/
+body{
+    font-family: 'Nunito', sans-serif;
+    margin:0;
+}
 header{
+    display:grid;
+    grid-template-columns:1fr 12fr;
     background-color:black;
     color:white;
-    padding:75px 0 75px 200px;
+    padding:3% 0 3% 2%;
+}
+#nevunk{
+    padding-top:0.4%;
+    font-family:'Gideon Roman';
+}
+#header_logo{
+    float:left;
+}
+#logo{
+    background-color:white;
 }
 nav{
     background-color:black;
     padding:10px;
-    border-top:1px solid white;
+    border-top:1px solid lightgrey;
 }
 nav ul{
     margin-top:0;
@@ -53,13 +69,17 @@ nav ul li a{
     text-decoration:none;
     padding:5px;
 }
+a:hover{
+    background-color:white;
+    color:black;
+}
 #user{
     float:right;
-    padding-right:100px;
+    /*padding-right:5%;*/
 }
 article{
     height:500px;
-    background-color:cadetblue;
+    background-color:black;
 }
 footer{
     height:250px;
