@@ -15,33 +15,25 @@
 <body class="antialiased">
     <main>
         <header>
-            <img src="{{url('images/logo.jpg')}}"  id="header_logo" class="photo" width="100" height="100">
+            <a href="{{url('/')}}"><img src="{{url('images/logo.jpg')}}"  id="header_logo" class="photo" width="100" height="100"></a></li>
+            <!--<img src="{{url('images/logo.jpg')}}"  id="header_logo" class="photo" width="100" height="100">-->
             <h1 id="nevunk">Mercedes Mercy</h1>
         </header>
         <nav>
             <ul>
-                <li><a href="index.html">Kezdőlap</a></li>
-                <li><a href="konfigurator.html">Konfigurátor</a></li>
+                <li><a id="nav_hover" href="{{url('/')}}">Kezdőlap</a></li>
+                <li><a id="nav_hover" href="{{url('/model')}}">Konfigurátor</a></li>
                 <li id="user">@if (Route::has('login'))
                     @auth
-                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Profil</a>
+                        <a id="nav_hover" href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Profil</a>
                     @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Bejelenetkezés</a>
+                        <a id="nav_hover" href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Bejelenetkezés</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Regisztráció</a>
+                            <a id="nav_hover" href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Regisztráció</a>
                         @endif
                     @endauth
                     @endif
                 </li>
             </ul>
         </nav>
-        <article>
-
-        </article>
-
-        <footer></footer>
-    </main>
-</body>
-
-</html>

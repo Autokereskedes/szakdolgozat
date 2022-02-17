@@ -69,7 +69,7 @@ nav ul li a{
     text-decoration:none;
     padding:5px;
 }
-a:hover{
+#nav_hover:hover{
     background-color:white;
     color:black;
 }
@@ -77,11 +77,19 @@ a:hover{
     float:right;
     /*padding-right:5%;*/
 }
-article{
-    height:500px;
+.welcome_container{
+    /*display:flex;*/
+}
+article, section{
     background-color:black;
+    color:white;
+}
+article{
+    height:688px;
 }
 footer{
-    height:250px;
-    background-color:coral;
+    border-top:1px solid lightgrey;
+    background-color:black;
+    color:white;
+    text-align:center;
 }

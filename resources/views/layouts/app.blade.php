@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -45,3 +46,8 @@
         @livewireScripts
     </body>
 </html>
+=======
+@include('includes.head')
+@yield('content')
+@include('includes.foot')
+>>>>>>> Stashed changes
