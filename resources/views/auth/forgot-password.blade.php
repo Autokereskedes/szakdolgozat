@@ -1,11 +1,11 @@
 <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
-            <x-jet-authentication-card-logo />
+        <img src="{{url('images/logo_trp.png')}}"  id="header_logo" class="photo" width="100" height="100">
         </x-slot>
 
         <div class="mb-4 text-sm text-gray-600">
-            {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
+            {{ __('Elfelejtetted a jelszavad? Add meg az Email címedet és küldünk egy Email-t, hogy válassz egy új jelszót.') }}
         </div>
 
         @if (session('status'))
@@ -26,7 +26,7 @@
 
             <div class="flex items-center justify-end mt-4">
                 <x-jet-button>
-                    {{ __('Email Password Reset Link') }}
+                    {{ __('Jelszó Vissza Állítás Link') }}
                 </x-jet-button>
             </div>
         </form>
