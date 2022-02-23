@@ -1,8 +1,7 @@
-@extends('layouts.app')
-@section('content')
+@include('includes.head')
 <article class="welcome_container">
     <div>
         Üdvözöllek
     </div>
 </article>
-@endsection
+@include('includes.foot')
