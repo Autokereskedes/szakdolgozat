@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        
         <title>Mercedes Mercy</title>
         <link rel="icon" href="{{url('images/logo_trp.png')}}" type="image/icon type">
 
