@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ListazController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +18,14 @@ Route::get('/', function () {
     return view('pages/welcome');
 });
 
-Route::get('/model', function () {
+Route::get('/model', [ListazController::class,'index'], function () {
     return view('pages/configurator');
 });
+
+//Route::get('/model',  [ListazController::class,'index'] );
+
+Route::post('/saveItemRoute',[ListazController::class,'saveItem'])->name('saveItem');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');

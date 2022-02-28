@@ -57,7 +57,11 @@
                 "issues": "https://github.com/asm89/stack-cors/issues",
                 "source": "https://github.com/asm89/stack-cors/tree/v2.1.1"
             },
+<<<<<<< Updated upstream
             "install-path": "../asm89/stack-cors"
+=======
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/asm89/stack-cors"
+>>>>>>> Stashed changes
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -114,7 +118,7 @@
                 "issues": "https://github.com/Bacon/BaconQrCode/issues",
                 "source": "https://github.com/Bacon/BaconQrCode/tree/2.0.6"
             },
-            "install-path": "../bacon/bacon-qr-code"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/bacon/bacon-qr-code"
         },
         {
             "name": "brick/math",
@@ -177,7 +181,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../brick/math"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/brick/math"
         },
         {
             "name": "dasprid/enum",
@@ -227,7 +231,7 @@
                 "issues": "https://github.com/DASPRiD/Enum/issues",
                 "source": "https://github.com/DASPRiD/Enum/tree/1.0.3"
             },
-            "install-path": "../dasprid/enum"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/dasprid/enum"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -305,7 +309,7 @@
                 "issues": "https://github.com/dflydev/dflydev-dot-access-data/issues",
                 "source": "https://github.com/dflydev/dflydev-dot-access-data/tree/v3.0.1"
             },
-            "install-path": "../dflydev/dot-access-data"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/dflydev/dot-access-data"
         },
         {
             "name": "doctrine/inflector",
@@ -399,7 +403,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../doctrine/inflector"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/doctrine/inflector"
         },
         {
             "name": "doctrine/instantiator",
@@ -471,7 +475,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../doctrine/instantiator"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/doctrine/instantiator"
         },
         {
             "name": "doctrine/lexer",
@@ -550,7 +554,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../doctrine/lexer"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/doctrine/lexer"
         },
         {
             "name": "dragonmantank/cron-expression",
@@ -614,7 +618,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../dragonmantank/cron-expression"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/dragonmantank/cron-expression"
         },
         {
             "name": "egulias/email-validator",
@@ -685,7 +689,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../egulias/email-validator"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/egulias/email-validator"
         },
         {
             "name": "facade/flare-client-php",
@@ -753,7 +757,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../facade/flare-client-php"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/facade/flare-client-php"
         },
         {
             "name": "facade/ignition",
@@ -834,7 +838,7 @@
                 "issues": "https://github.com/facade/ignition/issues",
                 "source": "https://github.com/facade/ignition"
             },
-            "install-path": "../facade/ignition"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/facade/ignition"
         },
         {
             "name": "facade/ignition-contracts",
@@ -890,7 +894,7 @@
                 "issues": "https://github.com/facade/ignition-contracts/issues",
                 "source": "https://github.com/facade/ignition-contracts/tree/1.0.2"
             },
-            "install-path": "../facade/ignition-contracts"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/facade/ignition-contracts"
         },
         {
             "name": "fakerphp/faker",
@@ -960,7 +964,7 @@
                 "issues": "https://github.com/FakerPHP/Faker/issues",
                 "source": "https://github.com/FakerPHP/Faker/tree/v1.19.0"
             },
-            "install-path": "../fakerphp/faker"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/fakerphp/faker"
         },
         {
             "name": "filp/whoops",
@@ -1034,7 +1038,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../filp/whoops"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/filp/whoops"
         },
         {
             "name": "fruitcake/laravel-cors",
@@ -1116,7 +1120,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< Updated upstream
             "install-path": "../fruitcake/laravel-cors"
+=======
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/fruitcake/laravel-cors"
+>>>>>>> Stashed changes
         },
         {
             "name": "graham-campbell/result-type",
@@ -1181,7 +1189,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../graham-campbell/result-type"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/graham-campbell/result-type"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1308,7 +1316,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../guzzlehttp/guzzle"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/guzzlehttp/guzzle"
         },
         {
             "name": "guzzlehttp/promises",
@@ -1395,7 +1403,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../guzzlehttp/promises"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/guzzlehttp/promises"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -1513,7 +1521,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../guzzlehttp/psr7"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/guzzlehttp/psr7"
         },
         {
             "name": "hamcrest/hamcrest-php",
@@ -1567,7 +1575,7 @@
                 "issues": "https://github.com/hamcrest/hamcrest-php/issues",
                 "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
             },
-            "install-path": "../hamcrest/hamcrest-php"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/hamcrest/hamcrest-php"
         },
         {
             "name": "jaybizzle/crawler-detect",
@@ -1622,7 +1630,7 @@
                 "issues": "https://github.com/JayBizzle/Crawler-Detect/issues",
                 "source": "https://github.com/JayBizzle/Crawler-Detect/tree/v1.2.110"
             },
-            "install-path": "../jaybizzle/crawler-detect"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/jaybizzle/crawler-detect"
         },
         {
             "name": "jenssegers/agent",
@@ -1708,7 +1716,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../jenssegers/agent"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/jenssegers/agent"
         },
         {
             "name": "laravel/fortify",
@@ -1774,7 +1782,7 @@
                 "issues": "https://github.com/laravel/fortify/issues",
                 "source": "https://github.com/laravel/fortify"
             },
-            "install-path": "../laravel/fortify"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/laravel/fortify"
         },
         {
             "name": "laravel/framework",
@@ -1950,7 +1958,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "install-path": "../laravel/framework"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/laravel/framework"
         },
         {
             "name": "laravel/jetstream",
@@ -2019,7 +2027,7 @@
                 "issues": "https://github.com/laravel/jetstream/issues",
                 "source": "https://github.com/laravel/jetstream"
             },
-            "install-path": "../laravel/jetstream"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/laravel/jetstream"
         },
         {
             "name": "laravel/sail",
@@ -2082,7 +2090,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "install-path": "../laravel/sail"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/laravel/sail"
         },
         {
             "name": "laravel/sanctum",
@@ -2149,7 +2157,7 @@
                 "issues": "https://github.com/laravel/sanctum/issues",
                 "source": "https://github.com/laravel/sanctum"
             },
-            "install-path": "../laravel/sanctum"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/laravel/sanctum"
         },
         {
             "name": "laravel/serializable-closure",
@@ -2211,7 +2219,7 @@
                 "issues": "https://github.com/laravel/serializable-closure/issues",
                 "source": "https://github.com/laravel/serializable-closure"
             },
-            "install-path": "../laravel/serializable-closure"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/laravel/serializable-closure"
         },
         {
             "name": "laravel/tinker",
@@ -2282,7 +2290,7 @@
                 "issues": "https://github.com/laravel/tinker/issues",
                 "source": "https://github.com/laravel/tinker/tree/v2.7.0"
             },
-            "install-path": "../laravel/tinker"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/laravel/tinker"
         },
         {
             "name": "league/commonmark",
@@ -2389,7 +2397,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../league/commonmark"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/league/commonmark"
         },
         {
             "name": "league/config",
@@ -2474,7 +2482,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../league/config"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/league/config"
         },
         {
             "name": "league/flysystem",
@@ -2571,7 +2579,7 @@
                     "type": "other"
                 }
             ],
-            "install-path": "../league/flysystem"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/league/flysystem"
         },
         {
             "name": "league/mime-type-detection",
@@ -2630,7 +2638,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../league/mime-type-detection"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/league/mime-type-detection"
         },
         {
             "name": "livewire/livewire",
@@ -2706,7 +2714,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../livewire/livewire"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/livewire/livewire"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -2765,7 +2773,7 @@
                 "issues": "https://github.com/serbanghita/Mobile-Detect/issues",
                 "source": "https://github.com/serbanghita/Mobile-Detect/tree/2.8.39"
             },
-            "install-path": "../mobiledetect/mobiledetectlib"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/mobiledetect/mobiledetectlib"
         },
         {
             "name": "mockery/mockery",
@@ -2840,7 +2848,7 @@
                 "issues": "https://github.com/mockery/mockery/issues",
                 "source": "https://github.com/mockery/mockery/tree/1.5.0"
             },
-            "install-path": "../mockery/mockery"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/mockery/mockery"
         },
         {
             "name": "monolog/monolog",
@@ -2942,7 +2950,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../monolog/monolog"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/monolog/monolog"
         },
         {
             "name": "myclabs/deep-copy",
@@ -3003,7 +3011,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../myclabs/deep-copy"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/myclabs/deep-copy"
         },
         {
             "name": "nesbot/carbon",
@@ -3102,7 +3110,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../nesbot/carbon"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/nesbot/carbon"
         },
         {
             "name": "nette/schema",
@@ -3167,7 +3175,7 @@
                 "issues": "https://github.com/nette/schema/issues",
                 "source": "https://github.com/nette/schema/tree/v1.2.2"
             },
-            "install-path": "../nette/schema"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/nette/schema"
         },
         {
             "name": "nette/utils",
@@ -3255,7 +3263,7 @@
                 "issues": "https://github.com/nette/utils/issues",
                 "source": "https://github.com/nette/utils/tree/v3.2.7"
             },
-            "install-path": "../nette/utils"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/nette/utils"
         },
         {
             "name": "nikic/php-parser",
@@ -3314,7 +3322,7 @@
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
                 "source": "https://github.com/nikic/PHP-Parser/tree/v4.13.2"
             },
-            "install-path": "../nikic/php-parser"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/nikic/php-parser"
         },
         {
             "name": "nunomaduro/collision",
@@ -3404,7 +3412,7 @@
                     "type": "patreon"
                 }
             ],
-            "install-path": "../nunomaduro/collision"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/nunomaduro/collision"
         },
         {
             "name": "opis/closure",
@@ -3472,7 +3480,7 @@
                 "issues": "https://github.com/opis/closure/issues",
                 "source": "https://github.com/opis/closure/tree/3.6.3"
             },
-            "install-path": "../opis/closure"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/opis/closure"
         },
         {
             "name": "paragonie/constant_time_encoding",
@@ -3542,7 +3550,7 @@
                 "issues": "https://github.com/paragonie/constant_time_encoding/issues",
                 "source": "https://github.com/paragonie/constant_time_encoding"
             },
-            "install-path": "../paragonie/constant_time_encoding"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/paragonie/constant_time_encoding"
         },
         {
             "name": "phar-io/manifest",
@@ -3605,7 +3613,7 @@
                 "issues": "https://github.com/phar-io/manifest/issues",
                 "source": "https://github.com/phar-io/manifest/tree/2.0.3"
             },
-            "install-path": "../phar-io/manifest"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/phar-io/manifest"
         },
         {
             "name": "phar-io/version",
@@ -3659,7 +3667,7 @@
                 "issues": "https://github.com/phar-io/version/issues",
                 "source": "https://github.com/phar-io/version/tree/3.2.1"
             },
-            "install-path": "../phar-io/version"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/phar-io/version"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -3715,7 +3723,7 @@
                 "issues": "https://github.com/phpDocumentor/ReflectionCommon/issues",
                 "source": "https://github.com/phpDocumentor/ReflectionCommon/tree/2.x"
             },
-            "install-path": "../phpdocumentor/reflection-common"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/phpdocumentor/reflection-common"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -3775,7 +3783,7 @@
                 "issues": "https://github.com/phpDocumentor/ReflectionDocBlock/issues",
                 "source": "https://github.com/phpDocumentor/ReflectionDocBlock/tree/5.3.0"
             },
-            "install-path": "../phpdocumentor/reflection-docblock"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/phpdocumentor/reflection-docblock"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -3828,7 +3836,7 @@
                 "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
                 "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.6.0"
             },
-            "install-path": "../phpdocumentor/type-resolver"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/phpdocumentor/type-resolver"
         },
         {
             "name": "phpoption/phpoption",
@@ -3902,7 +3910,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../phpoption/phpoption"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/phpoption/phpoption"
         },
         {
             "name": "phpspec/prophecy",
@@ -3972,7 +3980,7 @@
                 "issues": "https://github.com/phpspec/prophecy/issues",
                 "source": "https://github.com/phpspec/prophecy/tree/v1.15.0"
             },
-            "install-path": "../phpspec/prophecy"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/phpspec/prophecy"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -4052,7 +4060,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../phpunit/php-code-coverage"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/phpunit/php-code-coverage"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -4115,7 +4123,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../phpunit/php-file-iterator"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/phpunit/php-file-iterator"
         },
         {
             "name": "phpunit/php-invoker",
@@ -4181,7 +4189,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../phpunit/php-invoker"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/phpunit/php-invoker"
         },
         {
             "name": "phpunit/php-text-template",
@@ -4243,7 +4251,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../phpunit/php-text-template"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/phpunit/php-text-template"
         },
         {
             "name": "phpunit/php-timer",
@@ -4305,7 +4313,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../phpunit/php-timer"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/phpunit/php-timer"
         },
         {
             "name": "phpunit/phpunit",
@@ -4411,7 +4419,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../phpunit/phpunit"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/phpunit/phpunit"
         },
         {
             "name": "pragmarx/google2fa",
@@ -4466,7 +4474,7 @@
                 "issues": "https://github.com/antonioribeiro/google2fa/issues",
                 "source": "https://github.com/antonioribeiro/google2fa/tree/8.0.0"
             },
-            "install-path": "../pragmarx/google2fa"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/pragmarx/google2fa"
         },
         {
             "name": "psr/container",
@@ -4517,7 +4525,7 @@
                 "issues": "https://github.com/php-fig/container/issues",
                 "source": "https://github.com/php-fig/container/tree/1.1.2"
             },
-            "install-path": "../psr/container"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/psr/container"
         },
         {
             "name": "psr/event-dispatcher",
@@ -4570,7 +4578,7 @@
                 "issues": "https://github.com/php-fig/event-dispatcher/issues",
                 "source": "https://github.com/php-fig/event-dispatcher/tree/1.0.0"
             },
-            "install-path": "../psr/event-dispatcher"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/psr/event-dispatcher"
         },
         {
             "name": "psr/http-client",
@@ -4625,7 +4633,7 @@
             "support": {
                 "source": "https://github.com/php-fig/http-client/tree/master"
             },
-            "install-path": "../psr/http-client"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/psr/http-client"
         },
         {
             "name": "psr/http-factory",
@@ -4683,7 +4691,7 @@
             "support": {
                 "source": "https://github.com/php-fig/http-factory/tree/master"
             },
-            "install-path": "../psr/http-factory"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/psr/http-factory"
         },
         {
             "name": "psr/http-message",
@@ -4739,7 +4747,7 @@
             "support": {
                 "source": "https://github.com/php-fig/http-message/tree/master"
             },
-            "install-path": "../psr/http-message"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/psr/http-message"
         },
         {
             "name": "psr/log",
@@ -4792,7 +4800,7 @@
             "support": {
                 "source": "https://github.com/php-fig/log/tree/2.0.0"
             },
-            "install-path": "../psr/log"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/psr/log"
         },
         {
             "name": "psr/simple-cache",
@@ -4846,7 +4854,7 @@
             "support": {
                 "source": "https://github.com/php-fig/simple-cache/tree/master"
             },
-            "install-path": "../psr/simple-cache"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/psr/simple-cache"
         },
         {
             "name": "psy/psysh",
@@ -4924,7 +4932,7 @@
                 "issues": "https://github.com/bobthecow/psysh/issues",
                 "source": "https://github.com/bobthecow/psysh/tree/v0.11.1"
             },
-            "install-path": "../psy/psysh"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/psy/psysh"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -4971,7 +4979,7 @@
                 "issues": "https://github.com/ralouphie/getallheaders/issues",
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
-            "install-path": "../ralouphie/getallheaders"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/ralouphie/getallheaders"
         },
         {
             "name": "ramsey/collection",
@@ -5053,7 +5061,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../ramsey/collection"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/ramsey/collection"
         },
         {
             "name": "ramsey/uuid",
@@ -5154,7 +5162,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../ramsey/uuid"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/ramsey/uuid"
         },
         {
             "name": "sebastian/cli-parser",
@@ -5213,7 +5221,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../sebastian/cli-parser"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/sebastian/cli-parser"
         },
         {
             "name": "sebastian/code-unit",
@@ -5272,7 +5280,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../sebastian/code-unit"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/sebastian/code-unit"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -5330,7 +5338,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../sebastian/code-unit-reverse-lookup"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/sebastian/code-unit-reverse-lookup"
         },
         {
             "name": "sebastian/comparator",
@@ -5407,7 +5415,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../sebastian/comparator"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/sebastian/comparator"
         },
         {
             "name": "sebastian/complexity",
@@ -5467,7 +5475,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../sebastian/complexity"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/sebastian/complexity"
         },
         {
             "name": "sebastian/diff",
@@ -5536,7 +5544,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../sebastian/diff"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/sebastian/diff"
         },
         {
             "name": "sebastian/environment",
@@ -5602,7 +5610,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../sebastian/environment"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/sebastian/environment"
         },
         {
             "name": "sebastian/exporter",
@@ -5682,7 +5690,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../sebastian/exporter"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/sebastian/exporter"
         },
         {
             "name": "sebastian/global-state",
@@ -5749,7 +5757,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../sebastian/global-state"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/sebastian/global-state"
         },
         {
             "name": "sebastian/lines-of-code",
@@ -5809,7 +5817,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../sebastian/lines-of-code"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/sebastian/lines-of-code"
         },
         {
             "name": "sebastian/object-enumerator",
@@ -5869,7 +5877,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../sebastian/object-enumerator"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/sebastian/object-enumerator"
         },
         {
             "name": "sebastian/object-reflector",
@@ -5927,7 +5935,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../sebastian/object-reflector"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/sebastian/object-reflector"
         },
         {
             "name": "sebastian/recursion-context",
@@ -5993,7 +6001,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../sebastian/recursion-context"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/sebastian/recursion-context"
         },
         {
             "name": "sebastian/resource-operations",
@@ -6051,7 +6059,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../sebastian/resource-operations"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/sebastian/resource-operations"
         },
         {
             "name": "sebastian/type",
@@ -6110,7 +6118,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../sebastian/type"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/sebastian/type"
         },
         {
             "name": "sebastian/version",
@@ -6166,7 +6174,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../sebastian/version"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/sebastian/version"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -6245,7 +6253,7 @@
                 }
             ],
             "abandoned": "symfony/mailer",
-            "install-path": "../swiftmailer/swiftmailer"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/swiftmailer/swiftmailer"
         },
         {
             "name": "symfony/console",
@@ -6347,7 +6355,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/console"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/console"
         },
         {
             "name": "symfony/css-selector",
@@ -6415,7 +6423,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/css-selector"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/css-selector"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -6485,7 +6493,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/deprecation-contracts"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/deprecation-contracts"
         },
         {
             "name": "symfony/error-handler",
@@ -6559,7 +6567,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/error-handler"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/error-handler"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -6645,7 +6653,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/event-dispatcher"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/event-dispatcher"
         },
         {
             "name": "symfony/event-dispatcher-contracts",
@@ -6727,7 +6735,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/event-dispatcher-contracts"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/event-dispatcher-contracts"
         },
         {
             "name": "symfony/finder",
@@ -6793,7 +6801,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/finder"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/finder"
         },
         {
             "name": "symfony/http-foundation",
@@ -6869,7 +6877,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/http-foundation"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/http-foundation"
         },
         {
             "name": "symfony/http-kernel",
@@ -6984,7 +6992,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/http-kernel"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/http-kernel"
         },
         {
             "name": "symfony/mime",
@@ -7070,7 +7078,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/mime"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/mime"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -7155,7 +7163,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/polyfill-ctype"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/polyfill-ctype"
         },
         {
             "name": "symfony/polyfill-iconv",
@@ -7241,7 +7249,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/polyfill-iconv"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/polyfill-iconv"
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
@@ -7325,7 +7333,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/polyfill-intl-grapheme"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/polyfill-intl-grapheme"
         },
         {
             "name": "symfony/polyfill-intl-idn",
@@ -7415,7 +7423,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/polyfill-intl-idn"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/polyfill-intl-idn"
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
@@ -7502,7 +7510,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/polyfill-intl-normalizer"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/polyfill-intl-normalizer"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -7588,7 +7596,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/polyfill-mbstring"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/polyfill-mbstring"
         },
         {
             "name": "symfony/polyfill-php72",
@@ -7667,7 +7675,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/polyfill-php72"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/polyfill-php72"
         },
         {
             "name": "symfony/polyfill-php73",
@@ -7749,7 +7757,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/polyfill-php73"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/polyfill-php73"
         },
         {
             "name": "symfony/polyfill-php80",
@@ -7835,7 +7843,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/polyfill-php80"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/polyfill-php80"
         },
         {
             "name": "symfony/polyfill-php81",
@@ -7917,7 +7925,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/polyfill-php81"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/polyfill-php81"
         },
         {
             "name": "symfony/process",
@@ -7982,7 +7990,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/process"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/process"
         },
         {
             "name": "symfony/routing",
@@ -8075,7 +8083,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/routing"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/routing"
         },
         {
             "name": "symfony/service-contracts",
@@ -8160,7 +8168,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/service-contracts"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/service-contracts"
         },
         {
             "name": "symfony/string",
@@ -8248,7 +8256,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/string"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/string"
         },
         {
             "name": "symfony/translation",
@@ -8346,7 +8354,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/translation"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/translation"
         },
         {
             "name": "symfony/translation-contracts",
@@ -8427,7 +8435,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/translation-contracts"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/translation-contracts"
         },
         {
             "name": "symfony/var-dumper",
@@ -8519,7 +8527,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../symfony/var-dumper"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/symfony/var-dumper"
         },
         {
             "name": "theseer/tokenizer",
@@ -8572,7 +8580,7 @@
                     "type": "github"
                 }
             ],
-            "install-path": "../theseer/tokenizer"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/theseer/tokenizer"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -8628,7 +8636,7 @@
                 "issues": "https://github.com/tijsverkoyen/CssToInlineStyles/issues",
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/2.2.4"
             },
-            "install-path": "../tijsverkoyen/css-to-inline-styles"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/tijsverkoyen/css-to-inline-styles"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -8711,7 +8719,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../vlucas/phpdotenv"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/vlucas/phpdotenv"
         },
         {
             "name": "voku/portable-ascii",
@@ -8788,7 +8796,7 @@
                     "type": "tidelift"
                 }
             ],
-            "install-path": "../voku/portable-ascii"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/voku/portable-ascii"
         },
         {
             "name": "webmozart/assert",
@@ -8849,7 +8857,7 @@
                 "issues": "https://github.com/webmozarts/assert/issues",
                 "source": "https://github.com/webmozarts/assert/tree/1.10.0"
             },
-            "install-path": "../webmozart/assert"
+            "install-path": "../../../../GitHub/szakdolgozat/vendor/webmozart/assert"
         }
     ],
     "dev": true,
