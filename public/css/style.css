@@ -26,28 +26,8 @@ article{
 footer{
     grid-area:"f";
 }
-/*--------------GRID--------------*/
-body{
-    font-family: 'Nunito', sans-serif;
-    margin:0;
-}
-header{
-    display:grid;
-    grid-template-columns:1fr 12fr;
-    background-color:black;
-    color:white;
-    padding:3% 0 3% 2%;
-}
-#nevunk{
-    padding-top:0.4%;
-    font-family:'Gideon Roman';
-}
-#header_logo{
-    float:left;
-}
-#logo{
-    background-color:white;
-}
+/*------------GRID VÉGE------------*/
+/*---------------NAV---------------*/
 nav{
     background-color:black;
     padding:10px;
@@ -73,12 +53,34 @@ nav ul li a{
     background-color:white;
     color:black;
 }
+/*-------------NAV VÉGE------------*/
+body{
+    font-family: 'Nunito', sans-serif;
+    margin:0;
+}
+header{
+    display:grid;
+    grid-template-columns:1fr 12fr;
+    background-color:black;
+    color:white;
+    padding:3% 0 3% 2%;
+}
+#nevunk{
+    padding-top:0.4%;
+    font-family:'Gideon Roman';
+}
+#header_logo{
+    float:left;
+}
+#logo{
+    background-color:white;
+}
 #user{
     float:right;
     /*padding-right:5%;*/
 }
-.welcome_container{
-    /*display:flex;*/
+#udvozlo{
+    text-align:center;
 }
 article, section{
     background-color:black;
@@ -87,9 +89,40 @@ article, section{
 article{
     height:688px;
 }
+#sablon_auto{
+    
+}
+.konfigurator_container{
+    border:1px solid white;
+}
+#jarmu{
+    padding-left:10px;
+}
+#jarmu_konfigurator{
+    border:1px solid white;
+    margin:10px;
+    padding:10px;
+    display:flex;
+}
+#jarmu_osztalyok{
+    
+}
+#jarmu_osztalyok button{
+    display:flex;
+    background-color:black;
+    border:none;
+    color:white;
+    margin:10px;
+    font-size:18px;
+}
+#jarmu_osztalyok button:hover{
+    
+}
+/*--------------FOOTER-------------*/
 footer{
     border-top:1px solid lightgrey;
     background-color:black;
     color:white;
     text-align:center;
 }
+/*------------FOOTER VÉGE----------*/

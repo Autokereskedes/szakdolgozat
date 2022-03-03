@@ -22,9 +22,7 @@ Route::get('/model', [ListazController::class,'index'], function () {
     return view('pages/configurator');
 });
 
-//Route::get('/model',  [ListazController::class,'index'] );
-
-Route::post('/saveItemRoute',[ListazController::class,'saveItem'])->name('saveItem');
+//Route::post('/saveItemRoute',[ListazController::class,'saveItem'])->name('saveItem');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

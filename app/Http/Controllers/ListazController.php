@@ -18,7 +18,7 @@ class ListazController extends Controller
 
     }
 
-    public function saveItem(Request $request) {
+    /*public function saveItem(Request $request) {
         // \Log::info(json_encode($request->all()));
         $newListItem = new kivitel;
         $newListItem->kivNev = $request->listItem;
@@ -27,5 +27,5 @@ class ListazController extends Controller
         $newListItem->save();
         // return view('welcome', ['listItems' => ListItem::all()]);
         return redirect('/model');
-    }
+    }*/
 }
