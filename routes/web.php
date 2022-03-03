@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ListazController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,8 +23,6 @@ Route::get('/model', [ListazController::class,'index'], function () {
     return view('pages/configurator');
 });
 
-//Route::post('/saveItemRoute',[ListazController::class,'saveItem'])->name('saveItem');
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', [UserController::class,'index'], function () {
     return view('dashboard');
 })->name('dashboard');
