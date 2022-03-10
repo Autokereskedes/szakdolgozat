@@ -9,6 +9,12 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     public function index(){
-        return view('/dashboard',['userItems' => User::get()]);
+        return view('/dashboard', ['userItems' => User::where('admin',0)->get()]);
+    }
+    public function setAdmin($id) {
+        $userItem = User::find($id);
+        $userItem->admin = 1;
+        $userItem->save();
+        return redirect('/dashboard');   
     }
 }

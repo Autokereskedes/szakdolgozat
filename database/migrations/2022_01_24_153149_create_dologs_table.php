@@ -14,7 +14,7 @@ class CreateDologsTable extends Migration
     public function up()
     {
         Schema::create('dologs', function (Blueprint $table) {
-            $table->char('dolog',30)->primary(); 
+            $table->char('felszerelesCsomag',30)->primary(); 
             $table->char('tipus',10); 
             $table->text('leírás'); 
             $table->integer('ár'); 

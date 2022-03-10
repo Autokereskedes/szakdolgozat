@@ -17,8 +17,8 @@ class CreateRendeltAutosTable extends Migration
             $table->increments('rendazon'); 
             $table->char('modell',30);
             $table->foreign('modell')->references('modell')->on('modells');
-            $table->integer('rendExtrId')->unsigned(); 
-            $table->foreign('rendExtrId')->references('rendExtrId')->on('rendelt_extras'); 
+            $table->char('felszerelesCsomag',30);
+            $table->foreign('felszerelesCsomag')->references('felszerelesCsomag')->on('dologs');
             $table->biginteger('FId')->unsigned(); 
             $table->foreign('FId')->references('id')->on('users'); 
             $table->integer('fényId')->unsigned();

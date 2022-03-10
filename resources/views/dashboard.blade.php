@@ -2,7 +2,12 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+        @if(Auth::user()->admin===1)
+        {{ __('Admin felület') }}
+        @endif
+        @if(Auth::user()->admin===0)
         {{ __('Profil felület') }}
+        @endif
         </h2>
         <link rel="stylesheet" type="text/css" href="{{ url('css/dashboard.css') }}">
     </x-slot>
@@ -20,14 +25,18 @@
                         <div class="flex" style="align-items: center;">
                             <p>
                                 <table>
-                                    <tr><th>ID</th><th>Felhasználónév</th><th>E-mail</th><th>Jogkör</th></tr>
+                                    <tr><th>ID</th><th>Felhasználónév</th><th>E-mail</th><th>Jogkör</th><th>Jogkör módosítása</th></tr>
                                     @foreach ($userItems as $userItem)
-                                    <tr><th>{{ $userItem->id}}</th><td>{{ $userItem->name}}</td><td>{{ $userItem->email}}</td><td>{{ $userItem->admin}}</td></tr>
+                                    <tr><th>{{ $userItem->id}}</th><td>{{ $userItem->name}}</td><td>{{ $userItem->email}}</td><td>{{ $userItem->admin}}</td>
+                                    <td><form method="post" action="{{ route('setAdmin', $userItem->id) }}" accept-charset="UTF-8">
+                                        {{ csrf_field() }}
+                                        <button type="submit" style="width:100%;">Módosítás</button>
+                                        </form></td></tr>
                                     @endforeach
                                 </table>
                             </p>   
                         </div>
-            </div> 
+            </div>
             @endif
             @if(Auth::user()->admin===0)
 

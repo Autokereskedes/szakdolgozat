@@ -16,8 +16,6 @@ class CreateFenyezesTable extends Migration
     {
         Schema::create('fenyezes', function (Blueprint $table) {
             $table->increments('fényId');
-            $table->char('modell',30);
-            $table->foreign('modell')->references('modell')->on('modells');
             $table->char('szin',30);
             $table->integer('ár'); 
             $table->string('kép',30); 

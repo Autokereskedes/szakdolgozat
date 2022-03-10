@@ -20,8 +20,6 @@ class CreateModellsTable extends Migration
             $table->char('motor',30);
             $table->foreign('motor')->references('motor')->on('motors');
             $table->integer('alapár'); 
-            $table->integer('hazon')->unsigned();
-            $table->foreign('hazon')->references('hazon')->on('hitels');
             $table->string('kép', 30); 
             $table->timestamps();
         });

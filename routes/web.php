@@ -26,3 +26,5 @@ Route::get('/model', [ListazController::class,'index'], function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', [UserController::class,'index'], function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::post('/setAdminRoute/{id}', [UserController::class,'setAdmin'])->name('setAdmin');
