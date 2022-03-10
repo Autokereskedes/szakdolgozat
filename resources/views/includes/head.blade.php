@@ -5,12 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mercedes Mercy</title>
-    <link rel="icon" href="{{url('images/logo_trp.png')}}" type="image/icon type">
-
+    
     <!-- links -->
+    <link rel="icon" href="{{url('images/logo_trp.png')}}" type="image/icon type">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ url('css/style.css') }}">
+
+    <!-- scripts -->
+    <script src="{{ url('js/script.js') }}"></script>
+    <script src="{{ url('js/auto.js') }}"></script>
 </head>
 
 <body class="antialiased">

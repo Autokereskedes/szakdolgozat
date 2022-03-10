@@ -90,7 +90,10 @@ article{
     height:688px;
 }
 #sablon_auto{
-    
+    height:200px;
+    width:250px;
+    border:1px solid white;
+    text-align:center;
 }
 .konfigurator_container{
     border:1px solid white;
