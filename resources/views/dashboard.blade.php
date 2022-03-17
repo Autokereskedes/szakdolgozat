@@ -19,24 +19,11 @@
                     
                 
             @if(Auth::user()->admin===1)
-            <div class="AdminUser">
-                    <h1> Felhasználók </h1>
-                    
-                        <div class="flex" style="align-items: center;">
-                            <p>
-                                <table>
-                                    <tr><th>ID</th><th>Felhasználónév</th><th>E-mail</th><th>Jogkör</th><th>Jogkör módosítása</th></tr>
-                                    @foreach ($userItems as $userItem)
-                                    <tr><th>{{ $userItem->id}}</th><td>{{ $userItem->name}}</td><td>{{ $userItem->email}}</td><td>{{ $userItem->admin}}</td>
-                                    <td><form method="post" action="{{ route('setAdmin', $userItem->id) }}" accept-charset="UTF-8">
-                                        {{ csrf_field() }}
-                                        <button type="submit" style="width:100%;">Módosítás</button>
-                                        </form></td></tr>
-                                    @endforeach
-                                </table>
-                            </p>   
-                        </div>
-            </div>
+            <ul>
+                <li><a id="nav_hover" href="{{url('/AdminUser')}}">Felhasználók</a></li>
+                <li><a id="nav_hover" href="{{url('/AdminModell')}}">Modellek</a></li>
+                <li><a id="nav_hover" href="{{url('/dashboard')}}">Vissza</a></li>
+            </ul>
             @endif
             @if(Auth::user()->admin===0)
 

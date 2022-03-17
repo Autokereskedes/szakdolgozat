@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ListazController;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +15,10 @@ use App\Http\Controllers\UserController;
 |
 */
 
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
+
 Route::get('/', function () {
     return view('pages/welcome');
 });
@@ -23,8 +27,12 @@ Route::get('/model', [ListazController::class,'index'], function () {
     return view('pages/configurator');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', [UserController::class,'index'], function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::get('/AdminUser', [AdminController::class,'users'], function () {
+    return view('pages/admin/AdminUser');
+});
 
-Route::post('/setAdminRoute/{id}', [UserController::class,'setAdmin'])->name('setAdmin');
+Route::get('/AdminModell', [AdminController::class,'modellList'], function () {
+    return view('pages/admin/AdminModell');
+});
+
+Route::post('/setAdminRoute/{id}', [AdminController::class,'setAdmin'])->name('setAdmin');

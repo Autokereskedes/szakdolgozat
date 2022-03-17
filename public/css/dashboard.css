@@ -17,3 +17,7 @@ button{
     width: 20%;
     text-decoration: solid;
 }
+ul{
+    float: right;
+    text-decoration: underline;
+}
