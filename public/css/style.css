@@ -56,7 +56,8 @@ nav ul li a{
 /*-------------NAV VÉGE------------*/
 body{
     font-family: 'Nunito', sans-serif;
-    margin:0;
+    margin: 0;
+    background-color:black;
 }
 header{
     display:grid;
@@ -120,6 +121,26 @@ article{
 }
 #jarmu_osztalyok button:hover{
     
+}
+.colorContainer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.confNav{
+    float: right;
+}
+.osszAr{
+    float:right;
+}
+.color_konfigurator_container{
+    margin: 20px 20px 20px 20px;
+}
+.interiorContainer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.interior_konfigurator_container{
+    margin: 20px 20px 20px 20px;
 }
 /*--------------FOOTER-------------*/
 footer{

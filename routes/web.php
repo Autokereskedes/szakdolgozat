@@ -36,3 +36,11 @@ Route::get('/AdminModell', [AdminController::class,'modellList'], function () {
 });
 
 Route::post('/setAdminRoute/{id}', [AdminController::class,'setAdmin'])->name('setAdmin');
+
+Route::get('/colorConfig', function () {
+    return view('pages/colorconf');
+});
+
+Route::get('/interiorConfig', function () {
+    return view('pages/interiorconf');
+});
