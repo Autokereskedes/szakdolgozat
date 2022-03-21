@@ -3,8 +3,8 @@ class Auto{
         this.elem = elem;
 
         this.modell = this.elem.children("#modell");
-        this.alapar = this.elem.children("#alapar");
-        this.kep = this.elem.children("#kep");
+        this.alapár = this.elem.children("#alapar");
+        this.kép = this.elem.children("#kep");
         this.konfGomb = this.elem.children("#konfiguralas");
 
         this.adat = adat;
@@ -18,12 +18,13 @@ class Auto{
 
     setAdat(ertekek){
         this.modell.html(ertekek.modell);
-        this.alapar.html(ertekek.alapar);
-        this.kep.attr("src", ertekek.kep);
+        this.alapár.html(ertekek.alapár);
+        //this.kép.attr("src",  ertekek.kép);
     }
 
     konfKattintTrigger(){
         let esemeny = new CustomEvent("autoKonfiguralas", {detail:this.adat});
         window.dispatchEvent(esemeny);
+        console.log("kattintottam");
     }
 }

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ListazController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ModellController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,18 +15,23 @@ use App\Http\Controllers\AdminController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
-
 Route::get('/', function () {
     return view('pages/welcome');
+});
+
+Route::get('/model', function () {
+    return view('pages/configurator');
 });
 
 Route::get('/model', [ListazController::class,'index'], function () {
     return view('pages/configurator');
 });
+
+Route::get('/model', [ModellController::class,'modell_listaz']);
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
 
 Route::get('/AdminUser', [AdminController::class,'users'], function () {
     return view('pages/admin/AdminUser');

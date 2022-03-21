@@ -1,55 +1,20 @@
 $(function(){
+    const ajaxhivas = new MyAjax();
     const modellek = [];
-    //let fileNev = "file.json";
-    const modellSzulo = $("#jarmu_lista");
-    let sablonElem = $("#sablon_auto");
+    const szuloModell = $("#jarmu_lista");
+    const sablonModell = $("#sablon_auto");
+    let apivegpont = "http://127.0.0.1:8000/api/";
+    //let apivegpont = "http://127.0.0.1:8000/api/BMW";
 
-    function getAdat(apivegpont, modellek, myCallback) {
-        modellek.splice(0, tomb.length);
-        $.ajax({
-            url: apivegpont,
-            type: "GET",
-            success: function (result) {
-                console.log("result");
-                result.forEach((element) => {
-                    modellek.push(element);
-                });
+    ajaxhivas.getAdat(apivegpont+"modells", modellek, kiir);
+    
+    function kiir(){
+        console.log(modellek);
+        modellek.forEach(function(elem){
+            let node = sablonModell.clone().appendTo(szuloModell);
+            const obj = new Auto(node, elem);
+        })
+        sablonModell.remove();
+    }
 
-                myCallback(modellek);
-            },
-        });
-    }
-    function postAdat(apivegpont, adat) {    
-        $.ajax({
-            url: apivegpont,
-            type: "POST",
-            data:adat,
-            success: function (result) {
-                console.log(result);
-              
-            },
-        });
-    }
-    function deleteAdat(apivegpont, id) {    
-        $.ajax({
-            url: apivegpont+"/"+id,
-            type: "DELETE",
-            
-            success: function (result) {
-                console.log(result);
-              
-            },
-        });
-    }
-    function putAdat(apivegpont, adat,  id) {    
-        $.ajax({
-            url: apivegpont+"/"+id,
-            type: "PUT",
-            data:adat,
-            success: function (result) {
-                console.log(result);
-              
-            },
-        });
-    }
 });

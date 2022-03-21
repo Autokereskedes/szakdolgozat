@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="{{ url('css/style.css') }}">
 
     <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{{ url('js/ajax.js') }}"></script>
     <script src="{{ url('js/script.js') }}"></script>
     <script src="{{ url('js/auto.js') }}"></script>
 </head>

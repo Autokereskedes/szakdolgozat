@@ -14,8 +14,8 @@ class ListazController extends Controller
         //return view('welcome', ['listItems' => ListItem::all()]);
         //return view('pages/configurator', ['listItems' => kivitel::all()]);
         //return view('welcome', ['listItems' => kivitel::where('befejezett',0)->get()]);
-        return view('pages/configurator', ['listItems' => kivitel::get()]);
-
+        return view('pages/configurator', ['kivitelListaz' => kivitel::get()]);
+        
     }
 
     /*public function saveItem(Request $request) {

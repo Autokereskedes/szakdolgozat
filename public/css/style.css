@@ -88,7 +88,6 @@ article, section{
     color:white;
 }
 article{
-    height:688px;
 }
 #sablon_auto{
     height:200px;
@@ -111,16 +110,15 @@ article{
 #jarmu_osztalyok{
     
 }
-#jarmu_osztalyok button{
+#jarmu_osztalyok a{
     display:flex;
-    background-color:black;
-    border:none;
-    color:white;
     margin:10px;
     font-size:18px;
 }
-#jarmu_osztalyok button:hover{
-    
+#jarmu_lista{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-column-gap:10%;
 }
 .colorContainer{
     display:grid;
