@@ -1,7 +1,7 @@
 @include('includes.head')
 <article class="interior_konfigurator_container">
     <h1>Beltér testreszabása</h1>
-    <h2 className="carName">Választott autó neve</h2>
+    <h2 class="carName">Választott autó neve</h2>
     <img id="kep" src="{{url('images/sablon.jpg')}}" alt="" width="25%">
     <p class="osszAr">Jelenlegi ár: 1000 Ft</p>
     <div class="interiorContainer">

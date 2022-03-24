@@ -17,6 +17,8 @@
     <script src="{{ url('js/ajax.js') }}"></script>
     <script src="{{ url('js/script.js') }}"></script>
     <script src="{{ url('js/auto.js') }}"></script>
+    <script src="{{ url('js/motorSelect.js') }}"></script>
+    <script src="{{ url('js/motor.js') }}"></script>
     <script src="{{ url('js/localScript.js') }}"></script>
 </head>
 

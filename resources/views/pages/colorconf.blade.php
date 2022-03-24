@@ -1,8 +1,8 @@
 @include('includes.head')
 <article class="color_konfigurator_container">
     <h1>Autó fényezése</h1>
-    <h2 className="carName">Választott autó neve</h2>
-    <img id="kep" src="{{url('images/sablon.jpg')}}" alt="" width="25%">
+    <h2 class="carName">Választott autó neve</h2>
+    <img class="kep" src="" alt="" width="25%">
     <p class="osszAr">Jelenlegi ár: 1000 Ft</p>
     <div class="colorContainer">
         <div class="color">
@@ -34,7 +34,7 @@
     <nav class="confNav">
     <ul>
         <li><a href="{{url('/interiorConfig')}}">Beltér</a></li><br>
-        <li><a href="{{url('/')}}">Vissza</a></li>
+        <li><a href="{{url('/motor')}}">Vissza</a></li>
     </ul>
     </nav>
 </article>

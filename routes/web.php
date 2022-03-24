@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ListazController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ModellController;
+use App\Http\Controllers\MotorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,11 +24,11 @@ Route::get('/model', function () {
     return view('pages/configurator');
 });
 
-Route::get('/model', [ListazController::class,'index'], function () {
+/*Route::get('/model', [ListazController::class,'index'], function () {
     return view('pages/configurator');
-});
+});*/
 
-Route::get('/model', [ModellController::class,'modell_listaz']);
+//Route::get('/model', [ModellController::class,'modell_listaz']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
@@ -49,4 +50,8 @@ Route::get('/colorConfig', function () {
 
 Route::get('/interiorConfig', function () {
     return view('pages/interiorconf');
+});
+
+Route::get('/motor', function () {
+    return view('pages/motor');
 });

@@ -2,11 +2,6 @@
 <article class="konfigurator_container">
     <h1 id="jarmu">Járműveink</h1>
     <div id="jarmu_konfigurator">
-        <div id="jarmu_osztalyok">
-            <!--@foreach ($kivitelListaz as $kivitel)
-                <a>{{ $kivitel->kivNev }}</a>
-            @endforeach-->
-        </div>
         <div id="jarmu_lista">
             <div id="sablon_auto">
                 <h2 id="modell">példa</h2>

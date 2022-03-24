@@ -133,6 +133,13 @@ article{
 .color_konfigurator_container{
     margin: 20px 20px 20px 20px;
 }
+.motorContainer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.motor_konfigurator_container{
+    margin: 20px 20px 20px 20px;
+}
 .interiorContainer{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

@@ -20,3 +20,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('modells', [ModellController::class, 'modell_listaz']);
+Route::get('motors', [ModellController::class, 'motor_listaz']);
+
+//Route::get('motors', [MotorController::class, 'motor_listaz']);
