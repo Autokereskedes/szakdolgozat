@@ -90,10 +90,13 @@ article, section{
 article{
 }
 #sablon_auto{
-    height:200px;
-    width:250px;
-    border:1px solid white;
+    /*height:200px;
+    width:250px;*/
+    /*border:1px solid white;*/
     text-align:center;
+}
+#sablon_auto #kep{
+    width:100%;
 }
 .konfigurator_container{
     border:1px solid white;
@@ -105,20 +108,12 @@ article{
     border:1px solid white;
     margin:10px;
     padding:10px;
-    display:flex;
-}
-#jarmu_osztalyok{
     
-}
-#jarmu_osztalyok a{
-    display:flex;
-    margin:10px;
-    font-size:18px;
 }
 #jarmu_lista{
     display:grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
-    grid-column-gap:10%;
+    /*grid-column-gap:5%;*/
 }
 .colorContainer{
     display:grid;
