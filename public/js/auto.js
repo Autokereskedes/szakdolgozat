@@ -19,7 +19,7 @@ class Auto{
     setAdat(ertekek){
         this.modell.html(ertekek.modell);
         this.alapár.html(ertekek.alapár);
-        //this.kép.attr("src",  ertekek.kép);
+        this.kép.attr("src", "http://127.0.0.1:8000/images/"+ertekek.kép);
     }
 
     konfKattintTrigger(){
@@ -31,5 +31,6 @@ class Auto{
         localStorage.setItem('ar', this.adat.alapár);
         localStorage.setItem('kep', this.adat.kép);
         localStorage.setItem('motor', this.adat.motor);
+        location.replace("/motor");
     }
 }

@@ -9,7 +9,6 @@ $(function(){
     ajaxhivas.getAdat(apivegpont+"modells", modellek, kiir);
     
     function kiir(){
-        console.log(modellek);
         modellek.forEach(function(elem){
             let node = sablonModell.clone().appendTo(szuloModell);
             const obj = new Auto(node, elem);

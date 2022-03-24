@@ -2,7 +2,7 @@ class MyAjax{
     constructor(){};
 
     getAdat(apivegpont, tomb, myCallback) {
-        //tomb.splice(0, tomb.length);
+        tomb.splice(0, tomb.length);
         $.ajax({
             url: apivegpont,
             type: "GET",
