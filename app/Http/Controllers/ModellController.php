@@ -32,5 +32,18 @@ class ModellController extends Controller
     }
     return response()->json($motors->get());
 }
-  
+public function color_listaz(){
+    $colors = DB::table('fenyezes')
+    ->select('fényId', 'szin', 'ár', 'kép')
+    ->distinct()
+    ->get();
+    return  $colors;
+}
+public function interior_listaz(){
+    $interiors = DB::table('belters')
+    ->select('beltérId', 'szin', 'anyag', 'ár', 'kép')
+    ->distinct()
+    ->get();
+    return  $interiors;
+}
 }

@@ -12,14 +12,9 @@ class Motor{
         this.adat = adat;
 
         this.setAdat(this.adat);
-
-        /*this.konfGomb.on("click", ()=>{
-            this.konfKattintTrigger();
-        });*/
     }
 
     setAdat(ertekek){
-        console.log(ertekek);
         this.motor.html(ertekek.motor);
         this.kép.attr("src",  "http://127.0.0.1:8000/images/sablon.jpg");
         //this.kép.attr("src",  "http://127.0.0.1:8000/images/"+ertekek.kép);
@@ -28,14 +23,4 @@ class Motor{
         this.váltó.html(ertekek.váltó);
         this.sebességfokozat.html(ertekek.sebességfokozat);
     }
-
-   // konfKattintTrigger(){
-        /*let esemeny = new CustomEvent("autoKonfiguralas", {detail:this.adat});
-        window.dispatchEvent(esemeny);
-        localStorage.clear();
-        localStorage.setItem('modell', this.adat.modell);
-        localStorage.setItem('kivitel', this.adat.kivId);
-        localStorage.setItem('ar', this.adat.alapár);
-        localStorage.setItem('kep', this.adat.kép);*/
-   // }
 }

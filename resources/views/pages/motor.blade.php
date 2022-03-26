@@ -1,6 +1,6 @@
 @include('includes.head')
 <article class="motor_konfigurator_container">
-    <h1>Beltér testreszabása</h1>
+    <h1>Választott motor áttekintése</h1>
     <h2 class="carName">Választott autó neve</h2>
     <img class="selectedKep" src="" alt="" width="25%">
     <p class="osszAr">Jelenlegi ár: 1000 Ft</p>
