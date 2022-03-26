@@ -1,4 +1,7 @@
 @include('includes.head')
+<script>
+    localStorage.clear();
+</script>
 <article class="welcome_container">
     <div id="udvozlo">
         <h2>Üdvözlünk a Mercedes Mercy weboldalon!</h2>

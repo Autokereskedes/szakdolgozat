@@ -1,4 +1,7 @@
 @include('includes.head')
+<script>
+    localStorage.clear();
+</script>
 <article class="konfigurator_container">
     <h1 id="jarmu">Járműveink</h1>
     <div id="jarmu_konfigurator">

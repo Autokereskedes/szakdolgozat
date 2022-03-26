@@ -1,12 +1,11 @@
 @include('includes.head')
 <script>
-    var jelAr=Number(localStorage.getItem('ar'))+Number(localStorage.getItem('szinPrice'));
-    localStorage.setItem('ar', jelAr);
-    var jelAr=Number(localStorage.getItem('ar'))-Number(localStorage.getItem('belterPrice'));
-    localStorage.setItem('ar', jelAr)
+    var jelArSegedInt=Number(localStorage.getItem('ar'))+Number(localStorage.getItem('szinPrice'));
     localStorage.setItem('belter', 'Fekete');
     localStorage.setItem('belterAnyag', 'ARTICO műbőr / DINAMICA mikros');
     localStorage.setItem('belterPrice', '0');
+    var jelArInt=Number(jelArSegedInt)-Number(localStorage.getItem('belterPrice'));
+    localStorage.setItem('ar', jelArInt)
     $('.osszAr').html("Jelenlegi ár: "+localStorage.getItem('ar') + " Ft");
 </script>
 <article class="interior_konfigurator_container">

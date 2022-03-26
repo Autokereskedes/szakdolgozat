@@ -1,9 +1,10 @@
 @include('includes.head')
 <script>
-    var jelAr=Number(localStorage.getItem('ar'))-Number(localStorage.getItem('szinPrice'));
-    localStorage.setItem('ar', jelAr)
+    var jelArSegedCol=Number(localStorage.getItem('ar'))-Number(localStorage.getItem('szinPrice'));
     localStorage.setItem('szin', 'Polár-fehér uni fényezés');
     localStorage.setItem('szinPrice', '0');
+    var jelArCol=Number(jelArSegedCol)-Number(localStorage.getItem('interiorPrice'));
+    localStorage.setItem('ar', jelArCol);
 </script>
 <article class="color_konfigurator_container">
     <h1>Autó fényezése</h1>
