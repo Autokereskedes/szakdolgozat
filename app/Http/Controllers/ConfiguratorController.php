@@ -5,10 +5,11 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Models\modell;
 use App\Models\Models\motor;
+//use App\Models\Models\motor;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class ModellController extends Controller
+class ConfiguratorController extends Controller
 {
     public function index(){
         return view('modell.index');
@@ -45,5 +46,12 @@ public function interior_listaz(){
     ->distinct()
     ->get();
     return  $interiors;
+}
+public function csomag_listaz(){
+    $felszereless = DB::table('felszereles')
+    ->select('felszerelesCsomag', 'tipus', 'leírás', 'ár', 'kép')
+    ->distinct()
+    ->get();
+    return  $felszereless;
 }
 }

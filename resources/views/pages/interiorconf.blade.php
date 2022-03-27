@@ -1,11 +1,13 @@
 @include('includes.head')
+    <script src="{{ url('js/interiorSelect.js') }}"></script>
+    <script src="{{ url('js/interior.js') }}"></script>
 <script>
     var jelArSegedInt=Number(localStorage.getItem('ar'))+Number(localStorage.getItem('szinPrice'));
     localStorage.setItem('belter', 'Fekete');
     localStorage.setItem('belterAnyag', 'ARTICO műbőr / DINAMICA mikros');
     localStorage.setItem('belterPrice', '0');
     var jelArInt=Number(jelArSegedInt)-Number(localStorage.getItem('belterPrice'));
-    localStorage.setItem('ar', jelArInt)
+    localStorage.setItem('ar', jelArInt);
     $('.osszAr').html("Jelenlegi ár: "+localStorage.getItem('ar') + " Ft");
 </script>
 <article class="interior_konfigurator_container">
@@ -27,7 +29,7 @@
     </div>
     <nav class="confNav">
     <ul>
-        <li><a href="{{url('/')}}">Összesítés</a></li><br>
+        <li><a href="{{url('/packageConfig')}}">Csomag választása</a></li><br>
         <li><a href="{{url('/colorConfig')}}">Vissza</a></li>
     </ul>
     </nav>

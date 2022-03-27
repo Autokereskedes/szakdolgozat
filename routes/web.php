@@ -3,8 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ListazController;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\ModellController;
-use App\Http\Controllers\MotorController;
+use App\Http\Controllers\ConfiguratorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,4 +53,8 @@ Route::get('/interiorConfig', function () {
 
 Route::get('/motor', function () {
     return view('pages/motor');
+});
+
+Route::get('/packageConfig', function () {
+    return view('pages/packageconf');
 });

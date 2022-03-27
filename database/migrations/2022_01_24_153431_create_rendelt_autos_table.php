@@ -18,7 +18,7 @@ class CreateRendeltAutosTable extends Migration
             $table->char('modell',30);
             $table->foreign('modell')->references('modell')->on('modells');
             $table->char('felszerelesCsomag',30);
-            $table->foreign('felszerelesCsomag')->references('felszerelesCsomag')->on('dologs');
+            $table->foreign('felszerelesCsomag')->references('felszerelesCsomag')->on('felszereles');
             $table->biginteger('FId')->unsigned(); 
             $table->foreign('FId')->references('id')->on('users'); 
             $table->integer('fényId')->unsigned();

@@ -1,4 +1,6 @@
 @include('includes.head')
+    <script src="{{ url('js/colorSelect.js') }}"></script>
+    <script src="{{ url('js/color.js') }}"></script>
 <script>
     var jelArSegedCol=Number(localStorage.getItem('ar'))-Number(localStorage.getItem('szinPrice'));
     localStorage.setItem('szin', 'Polár-fehér uni fényezés');

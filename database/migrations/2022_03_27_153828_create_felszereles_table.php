@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDologsTable extends Migration
+class CreateFelszerelesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateDologsTable extends Migration
      */
     public function up()
     {
-        Schema::create('dologs', function (Blueprint $table) {
+        Schema::create('felszereles', function (Blueprint $table) {
             $table->char('felszerelesCsomag',30)->primary(); 
             $table->char('tipus',10); 
             $table->text('leírás'); 
@@ -30,6 +30,6 @@ class CreateDologsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('dologs');
+        Schema::dropIfExists('felszereles');
     }
 }

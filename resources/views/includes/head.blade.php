@@ -17,12 +17,6 @@
     <script src="{{ url('js/ajax.js') }}"></script>
     <script src="{{ url('js/script.js') }}"></script>
     <script src="{{ url('js/auto.js') }}"></script>
-    <script src="{{ url('js/motorSelect.js') }}"></script>
-    <script src="{{ url('js/motor.js') }}"></script>
-    <script src="{{ url('js/colorSelect.js') }}"></script>
-    <script src="{{ url('js/color.js') }}"></script>
-    <script src="{{ url('js/interiorSelect.js') }}"></script>
-    <script src="{{ url('js/interior.js') }}"></script>
     <script src="{{ url('js/localScript.js') }}"></script>
 </head>
 
