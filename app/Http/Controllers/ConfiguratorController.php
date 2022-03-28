@@ -23,6 +23,16 @@ class ConfiguratorController extends Controller
       ->get();
       return  $modells;
   }
+  public function modell_rendez(Request $request){
+    $q=$request->query('q');
+    if($q){
+        $modells = DB::table('modells')
+        ->select('modell', 'alapár', 'kép', 'kivId', 'motor')
+        ->where('modell', 'LIKE', $q)
+        ->distinct();
+    }
+    return response()->json($modells->get());
+  }
   public function motor_listaz(Request $request){
     $q=$request->query('q');
     if($q){

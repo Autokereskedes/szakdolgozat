@@ -7,6 +7,8 @@ $(function(){
     //let apivegpont = "http://127.0.0.1:8000/api/BMW";
 
     ajaxhivas.getAdat(apivegpont+"modells", modellek, kiir);
+
+    //ajaxhivas.getAdat(apivegpont+"modells" + "?q=", modellek , kiir);
     
     function kiir(){
         modellek.forEach(function(elem){
@@ -16,4 +18,7 @@ $(function(){
         sablonModell.remove();
     }
 
+    function valasztottRendezes(vl){
+        let valasztottOsztaly = document.getElementById('#rendezes').option;
+    }
 });

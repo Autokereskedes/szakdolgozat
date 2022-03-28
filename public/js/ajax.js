@@ -14,7 +14,6 @@ class MyAjax{
             },
         });
     }
-
     postAdat(apivegpont, adat) {    
         $.ajax({
             url: apivegpont,

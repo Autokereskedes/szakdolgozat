@@ -1,4 +1,5 @@
 @include('includes.head')
+<<<<<<< Updated upstream
     <script src="{{ url('js/packageSelect.js') }}"></script>
     <script src="{{ url('js/package.js') }}"></script>
 <script>
@@ -34,5 +35,9 @@
         <li><a href="{{url('/interiorConfig')}}">Vissza</a></li>
     </ul>
     </nav>
+=======
+<article>
+    
+>>>>>>> Stashed changes
 </article>
 @include('includes.foot')

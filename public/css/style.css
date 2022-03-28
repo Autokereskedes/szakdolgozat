@@ -44,6 +44,10 @@ nav ul li{
     list-style-type:none;
     float:left;
 }
+#user{
+    float:right;
+    /*padding-right:5%;*/
+}
 nav ul li a{
     color:white;
     text-decoration:none;
@@ -54,6 +58,9 @@ nav ul li a{
     color:black;
 }
 /*-------------NAV VÉGE------------*/
+main{
+    margin:auto;
+}
 body{
     font-family: 'Nunito', sans-serif;
     margin: 0;
@@ -76,10 +83,6 @@ header{
 #logo{
     background-color:white;
 }
-#user{
-    float:right;
-    /*padding-right:5%;*/
-}
 #udvozlo{
     text-align:center;
 }
@@ -88,31 +91,43 @@ article, section{
     color:white;
 }
 article{
+    
 }
 #sablon_auto{
     /*height:200px;
     width:250px;*/
     /*border:1px solid white;*/
     text-align:center;
+    padding:5px;
+}
+#sablon_auto h2{
+    margin:0;
 }
 #sablon_auto #kep{
     width:100%;
 }
 .konfigurator_container{
-    border:1px solid white;
+    
 }
-#jarmu{
-    padding-left:10px;
+#jarmu_fejlec{
+    padding-bottom:20px;
+    display:flex;
+    justify-content:space-between;
+}
+#jarmu_fejlec h1{
+    margin:0;
+}
+#rendezes{
+    /*position:relative;*/
 }
 #jarmu_konfigurator{
-    border:1px solid white;
     margin:10px;
     padding:10px;
-    
 }
 #jarmu_lista{
     display:grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
+    
     /*grid-column-gap:5%;*/
 }
 .colorContainer{
@@ -148,3 +163,35 @@ footer{
     text-align:center;
 }
 /*------------FOOTER VÉGE----------*/
+/*------------reszponzivitás----------*/
+@media screen and (max-width: 990px) {
+    #jarmu_fejlec{
+        grid-template-columns:auto 0.25fr;
+    }
+}
+@media screen and (max-width: 920px) {
+    #sablon_auto{
+        font-size:12.5px;
+    }
+}
+@media screen and (max-width: 740px) {
+    #sablon_auto{
+        font-size:10px;
+        margin:0;
+    }
+}
+@media screen and (max-width: 593px) {
+    #sablon_auto{
+        font-size:6.5px;
+    }
+    #user{
+        float:none;
+    }
+    nav ul li{
+        float:none;
+    }
+    nav ul{
+        text-align:center;
+    }
+}
+/*---------reszponzivitás vége--------*/

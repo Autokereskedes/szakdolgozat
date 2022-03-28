@@ -33,4 +33,9 @@ class Auto{
         localStorage.setItem('motor', this.adat.motor);
         location.replace("/motor");
     }
+    rendezesValaszt(){
+        let esemeny = new CustomEvent("autoRendezes", {detail:this.adat});
+        window.dispatchEvent(esemeny);
+        
+    }
 }

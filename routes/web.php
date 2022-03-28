@@ -51,6 +51,10 @@ Route::get('/interiorConfig', function () {
     return view('pages/interiorconf');
 });
 
+Route::get('/package', function () {
+    return view('pages/packageconf');
+});
+
 Route::get('/motor', function () {
     return view('pages/motor');
 });
