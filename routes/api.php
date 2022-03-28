@@ -25,5 +25,4 @@ Route::get('motors', [ConfiguratorController::class, 'motor_listaz']);
 Route::get('colors', [ConfiguratorController::class, 'color_listaz']);
 Route::get('interiors', [ConfiguratorController::class, 'interior_listaz']);
 Route::get('felszereless', [ConfiguratorController::class, 'csomag_listaz']);
-
-//Route::get('modellsRendez', [ModellController::class, 'modell_rendez']);
+Route::get('hitels', [ConfiguratorController::class, 'hitel_listaz']);

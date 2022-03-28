@@ -22,5 +22,6 @@ class Motor{
         this.üzemanyag.html(ertekek.üzemanyag);
         this.váltó.html(ertekek.váltó);
         this.sebességfokozat.html(ertekek.sebességfokozat);
+        localStorage.setItem('motorSpecs',ertekek.teljesítmény)
     }
 }

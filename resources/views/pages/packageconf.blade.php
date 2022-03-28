@@ -30,7 +30,7 @@
     </div>
     <nav class="confNav">
     <ul>
-        <li><a href="{{url('/')}}">Összesítés</a></li><br>
+        <li><a href="{{url('/sumConfig')}}">Összesítés</a></li><br>
         <li><a href="{{url('/interiorConfig')}}">Vissza</a></li>
     </ul>
     </nav>

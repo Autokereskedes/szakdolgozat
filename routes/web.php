@@ -62,3 +62,7 @@ Route::get('/motor', function () {
 Route::get('/packageConfig', function () {
     return view('pages/packageconf');
 });
+
+Route::get('/sumConfig', function () {
+    return view('pages/sumconf');
+});

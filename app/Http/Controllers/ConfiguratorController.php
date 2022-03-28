@@ -65,4 +65,11 @@ public function csomag_listaz(){
     ->get();
     return  $felszereless;
 }
+public function hitel_listaz(){
+    $hitels = DB::table('hitels')
+    ->select('hazon', 'kezdőrészlet', 'futamidő', 'szorzó')
+    ->distinct()
+    ->get();
+    return  $hitels;
+}
 }
