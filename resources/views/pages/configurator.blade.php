@@ -6,9 +6,10 @@
     <div id="jarmu_konfigurator">
         <div id="jarmu_fejlec">
             <h1>Járműveink</h1>
-            <form id="rendezes" style="margin-top:7px; text-align:center;">
+            <form style="margin-top:7px; text-align:center;">
                 <label for="rendezes">Rendezés: </label>
-                <select name="rendezes" id="rendezes">
+                <select name="rendezes" id="rendezes" onchange="rendezes()">
+                    <option value="none">Válasszon</option>
                     <option value="A_osztaly">A osztály</option>
                     <option value="C_osztaly">C osztály</option>
                     <option value="G_osztaly">G osztály</option>

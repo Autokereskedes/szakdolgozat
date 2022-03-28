@@ -36,6 +36,5 @@ class Auto{
     rendezesValaszt(){
         let esemeny = new CustomEvent("autoRendezes", {detail:this.adat});
         window.dispatchEvent(esemeny);
-        
     }
 }

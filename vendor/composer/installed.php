@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '8815f14ccd535dc99ad0791d349f4b53a7186378',
+        'reference' => '4c1b6973047716895a0ea89bf639b3057168ea2d',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -454,7 +454,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '8815f14ccd535dc99ad0791d349f4b53a7186378',
+            'reference' => '4c1b6973047716895a0ea89bf639b3057168ea2d',
             'dev_requirement' => false,
         ),
         'laravel/sail' => array(
@@ -903,18 +903,18 @@
             'dev_requirement' => false,
         ),
         'ramsey/uuid' => array(
-            'pretty_version' => '4.3.0',
-            'version' => '4.3.0.0',
+            'pretty_version' => '4.3.1',
+            'version' => '4.3.1.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../ramsey/uuid',
             'aliases' => array(),
-            'reference' => '8ced2afadd9ce455e2d5919d27c57e344bae4a09',
+            'reference' => '8505afd4fea63b81a85d3b7b53ac3cb8dc347c28',
             'dev_requirement' => false,
         ),
         'rhumsaa/uuid' => array(
             'dev_requirement' => false,
             'replaced' => array(
-                0 => '4.3.0',
+                0 => '4.3.1',
             ),
         ),
         'sebastian/cli-parser' => array(

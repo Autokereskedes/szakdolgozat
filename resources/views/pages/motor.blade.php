@@ -1,6 +1,6 @@
 @include('includes.head')
-    <script src="{{ url('js/motorSelect.js') }}"></script>
-    <script src="{{ url('js/motor.js') }}"></script>
+<script src="{{ url('js/motorSelect.js') }}"></script>
+<script src="{{ url('js/motor.js') }}"></script>
 <article class="motor_konfigurator_container">
     <h1>Választott motor áttekintése</h1>
     <h2 class="carName">Választott autó neve</h2>
@@ -17,10 +17,10 @@
         </div>
     </div>
     <nav class="confNav">
-    <ul>
-        <li><a href="{{url('/colorConfig')}}">Fényezés</a></li><br>
-        <li><a href="{{url('/')}}">Vissza</a></li>
-    </ul>
+        <ul>
+            <li><a href="{{url('/colorConfig')}}">Fényezés</a></li><br>
+            <li><a href="{{url('/')}}">Vissza</a></li>
+        </ul>
     </nav>
 </article>
 @include('includes.foot')

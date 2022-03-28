@@ -26,12 +26,13 @@ class ConfiguratorController extends Controller
   public function modell_rendez(Request $request){
     $q=$request->query('q');
     if($q){
-        $modells = DB::table('modells')
+        $modell = DB::table('modells')
         ->select('modell', 'alapár', 'kép', 'kivId', 'motor')
-        ->where('modell', 'LIKE', $q)
+        ->where('modell', 'LIKE', $q.'%')
+        //->where('modell', 'NOT', 'AMG')
         ->distinct();
     }
-    return response()->json($modells->get());
+    return response()->json($modell->get());
   }
   public function motor_listaz(Request $request){
     $q=$request->query('q');
