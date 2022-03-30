@@ -14,23 +14,22 @@ class CreateRendeltAutosTable extends Migration
     public function up()
     {
         Schema::create('rendelt_autos', function (Blueprint $table) {
-            $table->increments('rendazon'); 
+            $table->increments('rendazon');
             $table->char('modell',30);
             $table->foreign('modell')->references('modell')->on('modells');
             $table->char('felszerelesCsomag',30);
             $table->foreign('felszerelesCsomag')->references('felszerelesCsomag')->on('felszereles');
-            $table->biginteger('FId')->unsigned(); 
-            $table->foreign('FId')->references('id')->on('users'); 
-            $table->integer('fényId')->unsigned();
-            $table->foreign('fényId')->references('fényId')->on('fenyezes');
-            $table->integer('beltérId')->unsigned(); 
-            $table->foreign('beltérId')->references('beltérId')->on('belters'); 
-            $table->integer('összár'); 
-            $table->integer('hazon')->unsigned(); 
-            $table->foreign('hazon')->references('hazon')->on('hitels'); 
-            $table->date('ajánlatDátum'); 
-            $table->char('státusz', 20); 
-            $table->timestamps(); 
+            $table->biginteger('userId')->unsigned();
+            $table->foreign('userId')->references('id')->on('users');
+            $table->integer('fenyezes')->unsigned();
+            $table->foreign('fenyezes')->references('fényId')->on('fenyezes');
+            $table->integer('belter')->unsigned();
+            $table->foreign('belter')->references('beltérId')->on('belters');
+            $table->integer('összár');
+            $table->integer('hazon')->unsigned();
+            $table->foreign('hazon')->references('hazon')->on('hitels');
+            $table->char('státusz', 20);
+            $table->timestamps();
         });
     }
 

@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Models\Models\modell;
 use App\Models\Models\motor;
 use App\Models\Models\rendelt_auto;
-//use App\Models\Models\motor;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -14,7 +13,6 @@ class ConfiguratorController extends Controller
 {
     public function index(){
         return view('modell.index');
-        
     }
 
   public function modell_listaz(){
@@ -24,13 +22,21 @@ class ConfiguratorController extends Controller
       ->get();
       return  $modells;
   }
+
+  public function modellRendez($osztaly){
+    $autoOsztaly = DB::table('modells')
+    ->select('modell')
+    ->distinct()
+    ->whereRaw('modell', 'LIKE', '%'.$osztaly.'%')
+    ->get();
+    return  $autoOsztaly;
+}
   public function modell_rendez(Request $request){
     $q=$request->query('q');
     if($q){
         $modell = DB::table('modells')
         ->select('modell', 'alapár', 'kép', 'kivId', 'motor')
         ->where('modell', 'LIKE', $q.'%')
-        //->where('modell', 'NOT', 'AMG')
         ->distinct();
     }
     return response()->json($modell->get());
@@ -39,7 +45,7 @@ class ConfiguratorController extends Controller
     $q=$request->query('q');
     if($q){
         $motors = DB::table('motors')
-        ->select('motor', 'üzemanyag', 'teljesítmény', 'váltó', 'sebességfokozat', 'kép')
+        ->select('motor', 'üzemanyag', 'teljesítmény', 'váltó', 'sebességfokozat')
         ->where('motor', 'LIKE', $q)
         ->distinct();
     }
@@ -61,7 +67,7 @@ public function interior_listaz(){
 }
 public function csomag_listaz(){
     $felszereless = DB::table('felszereles')
-    ->select('felszerelesCsomag', 'tipus', 'leírás', 'ár', 'kép')
+    ->select('felszerelesCsomag', 'tipus', 'leírás', 'ár')
     ->distinct()
     ->get();
     return  $felszereless;
@@ -86,7 +92,6 @@ public function rendeles(Request $request){
     $rendA->státusz = $request->státusz;
     $rendA->ajánlatDátum = date("Y-m-d");
     $rendA->save();
-
     return redirect('/');
     }
     

@@ -17,8 +17,7 @@ class CreateFelszerelesTable extends Migration
             $table->char('felszerelesCsomag',30)->primary(); 
             $table->char('tipus',10); 
             $table->text('leírás'); 
-            $table->integer('ár'); 
-            $table->string('kép',30); 
+            $table->integer('ár');
             $table->timestamps(); 
         });
     }

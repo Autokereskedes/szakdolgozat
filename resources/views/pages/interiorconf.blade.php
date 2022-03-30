@@ -12,12 +12,16 @@
 </script>
 <article class="interior_konfigurator_container">
     <h1>Beltér testreszabása</h1>
-    <h2 class="carName">Választott autó neve</h2>
-    <h2 class="interiorNameH">Választott belső neve</h2><br>
-    <h2 class="interiorTypeH">Választott belső anyaga</h2><br>
-    <h2 class="interiorPriceH">Választott szín ára</h2><br>
-    <p class="osszAr">Jelenlegi ár: 1000 Ft</p>
-    <img class="selectedKep" src="" alt="" width="25%">
+    <div id="aktAuto">
+        <img class="selectedKep" src="" alt="" width="100%">
+        <div id="valasztottBelter">
+            <h2 class="carName">Választott autó neve</h2>
+            <h2 class="interiorNameH">Választott belső neve</h2><br>
+            <h2 class="interiorTypeH">Választott belső anyaga</h2><br>
+            <h2 class="interiorPriceH">Választott szín ára</h2><br>
+            <p class="osszAr">Jelenlegi ár: 1000 Ft</p>
+        </div>
+    </div>
     <div class="interiorContainer">
         <div class="interior">
             <h3 class="interiorName">Beltér színe</h3>

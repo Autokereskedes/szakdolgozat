@@ -9,12 +9,16 @@
     localStorage.setItem('ar', jelArCol);
 </script>
 <article class="color_konfigurator_container">
-    <h1>Autó fényezése</h1>
-    <h2 class="carName">Választott autó neve</h2><br>
-    <h2 class="colorNameH">Választott szín neve</h2><br>
-    <h2 class="colorPriceH">Választott szín ára</h2><br>
-    <p class="osszAr">Jelenlegi ár: 1000 Ft</p>
-    <img class="selectedKep" src="" alt="" width="25%">
+    <h1 style="padding-left:5%;">Autó fényezése</h1>
+    <div id="aktAuto">
+        <img class="selectedKep" src="" alt="" width="100%">
+        <div id="valasztottFenyezes">
+            <h2 class="carName">Választott autó neve</h2><br>
+            <h2 class="colorNameH">Választott szín neve</h2><br>
+            <h2 class="colorPriceH">Választott szín ára</h2><br>
+            <p class="osszAr">Jelenlegi ár: 1000 Ft</p>
+        </div>
+    </div>
     <div class="colorContainer">
         <div class="color">
             <h3 class="colorName">Szín neve</h3>

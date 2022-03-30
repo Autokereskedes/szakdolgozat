@@ -20,6 +20,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('modells', [ConfiguratorController::class, 'modell_listaz']);
+//Route::get('modells/{osztaly}', [ConfiguratorController::class, 'modellRendez']);
+Route::get('autoOsztaly', [ConfiguratorController::class, 'modellRendez']);
 Route::get('modell', [ConfiguratorController::class, 'modell_rendez']);
 Route::get('motors', [ConfiguratorController::class, 'motor_listaz']);
 Route::get('colors', [ConfiguratorController::class, 'color_listaz']);

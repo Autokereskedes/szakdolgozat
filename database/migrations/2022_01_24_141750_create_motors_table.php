@@ -19,7 +19,6 @@ class CreateMotorsTable extends Migration
             $table->string('teljesítmény',30); 
             $table->string('váltó',10); 
             $table->integer('sebességfokozat');
-            $table->string('kép', 30);  
             $table->timestamps(); 
         });
     }
