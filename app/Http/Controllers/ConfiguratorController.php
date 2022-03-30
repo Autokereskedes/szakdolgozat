@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Models\Models\modell;
 use App\Models\Models\motor;
+use App\Models\Models\rendelt_auto;
 //use App\Models\Models\motor;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -73,10 +74,20 @@ public function hitel_listaz(){
     ->get();
     return  $hitels;
 }
-public function rendeles(Request $request)
-    {
-        $data = $request->all();
+public function rendeles(Request $request){
+    $rendA = new rendelt_auto();
+    $rendA->modell = $request->modell;
+    $rendA->felszerelesCsomag = $request->felszerelesCsomag;
+    $rendA->FId = $request->FId;
+    $rendA->fényId = $request->fényId;
+    $rendA->beltérId = $request->beltérId;
+    $rendA->összár = $request->összár;
+    $rendA->hazon = $request->hazon;
+    $rendA->státusz = $request->státusz;
+    $rendA->ajánlatDátum = date("Y-m-d");
+    $rendA->save();
 
-        return response()->json(['success'=>'Ajax request submitted successfully']);
+    return redirect('/');
     }
+    
 }

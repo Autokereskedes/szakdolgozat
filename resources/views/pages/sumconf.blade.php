@@ -28,9 +28,19 @@
                     <p class="hitelStarter"></p>
                     <p class="hitelTime"></p>
                     <p class="hitelPay"></p>
-                    <button class="hitelSel">Ezt az opciót választom</button>
-</div>
-</div>
+                    <form method="POST" action='{{route("rendelesLeadasaName")}}' >
+                    <input type="hidden" id="modell" name="modell">
+                    <input type="hidden" id="felszerelesCsomag" name="felszerelesCsomag">
+                    <input type="hidden" id="FId" name="FId">
+                    <input type="hidden" id="fényId" name="fényId">
+                    <input type="hidden" id="beltérId" name="beltérId">
+                    <input type="hidden" id="összár" name="összár">
+                    <input type="hidden" id="hazon" name="hazon">
+                    <input type="hidden" id="státusz" name="státusz">
+                    <input type="submit" class="hitelSel" value="Ezt választom">
+                    </form>
+                </div>
+                </div>
 <!----        <table class="hitelList">
                 <th>Kezdőrészlet</th><th>Futamidő</th>
                 <tr class="hitel">
