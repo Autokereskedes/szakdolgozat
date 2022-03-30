@@ -7,7 +7,9 @@
         $('.osszAr').html("Az általad konfigurált autó ára: "+localStorage.getItem('ar') + " Ft");
     </script>
 <article class="sum_konfigurator_container">
-    <h2 class="carName">Választott autó neve</h2>
+@if (Route::has('login'))
+                    @auth
+                    <h2 class="carName">Választott autó neve</h2>
     <img class="selectedKep" src="" alt="" width="25%">
     <p class="osszAr">Jelenlegi ár: 1000 Ft</p>
     <div class="sum">
@@ -20,15 +22,27 @@
         <button>Ajánlat elfogadása teljes összeg kifizetésével</button>
         
         <h1>Hitel vállalás</h1>
-        
-        <table class="hitelList">
+        <div class="hitelList">
+                <p>Kezdőrészlet</p><p>Futamidő</p><br>
+                <div class="hitel">
+                    <p class="hitelStarter"></p>
+                    <p class="hitelTime"></p>
+                    <p class="hitelPay"></p>
+                    <button class="hitelSel">Ezt az opciót választom</button>
+</div>
+</div>
+<!----        <table class="hitelList">
                 <th>Kezdőrészlet</th><th>Futamidő</th>
                 <tr class="hitel">
                     <td class="hitelStarter"></td>
                     <td class="hitelTime"></td>
                     <td><button class="hitelSel">Ezt az opciót választom</button></td>
                 </tr>
-        </table>
+        </table>-->
     </div>
+                    @else
+                        <h1>Jelentkezz be a folytatáshoz</h1>  
+                    @endauth
+                    @endif
 </article>
 @include('includes.foot')

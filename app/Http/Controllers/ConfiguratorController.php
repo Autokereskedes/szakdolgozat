@@ -69,7 +69,14 @@ public function hitel_listaz(){
     $hitels = DB::table('hitels')
     ->select('hazon', 'kezdőrészlet', 'futamidő', 'szorzó')
     ->distinct()
+    ->where('hazon','not like','13')
     ->get();
     return  $hitels;
 }
+public function rendeles(Request $request)
+    {
+        $data = $request->all();
+
+        return response()->json(['success'=>'Ajax request submitted successfully']);
+    }
 }
