@@ -84,13 +84,12 @@ public function rendeles(Request $request){
     $rendA = new rendelt_auto();
     $rendA->modell = $request->modell;
     $rendA->felszerelesCsomag = $request->felszerelesCsomag;
-    $rendA->FId = $request->FId;
-    $rendA->fényId = $request->fényId;
-    $rendA->beltérId = $request->beltérId;
+    $rendA->userId = $request->FId;
+    $rendA->fenyezes = $request->fényId;
+    $rendA->belter = $request->beltérId;
     $rendA->összár = $request->összár;
     $rendA->hazon = $request->hazon;
     $rendA->státusz = $request->státusz;
-    $rendA->ajánlatDátum = date("Y-m-d");
     $rendA->save();
     return redirect('/');
     }

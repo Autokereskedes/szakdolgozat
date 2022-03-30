@@ -5,6 +5,7 @@
         var jelArSum=Number(localStorage.getItem('ar'))+Number(localStorage.getItem('csomagPrice'));
         localStorage.setItem('ar', jelArSum);
         $('.osszAr').html("Az általad konfigurált autó ára: "+localStorage.getItem('ar') + " Ft");
+        
     </script>
 <article class="sum_konfigurator_container">
 @if (Route::has('login'))
@@ -19,7 +20,17 @@
             <td class="sumMotorName">td</td> <td class="sumColorName">td</td> <td class="sumInteriorName">td</td> <td class="sumPackageName">td</td> <tr>
             <td class="sumMotorType">td</td> <td class="sumColorPrice">td</td> <td class="sumInteriorPrice">td</td> <td class="sumPackagePrice">td</td>
         </Table>
-        <button>Ajánlat elfogadása teljes összeg kifizetésével</button>
+        <form method="POST" action='{{route("rendelesLeadasaName")}}' >
+                    <input type="hidden" id="Bmodell" name="modell">
+                    <input type="hidden" id="BfelszerelesCsomag" name="felszerelesCsomag">
+                    <input type="hidden" id="BFId" name="FId" value="{{ Auth::user()->id }}">
+                    <input type="hidden" id="BfényId" name="fényId">
+                    <input type="hidden" id="BbeltérId" name="beltérId">
+                    <input type="hidden" id="Bösszár" name="összár">
+                    <input type="hidden" id="BBhazon" name="hazon" value="13">
+                    <input type="hidden" id="Bstátusz" name="státusz" value="Egy összegben tervezi kifizetni.">
+                    <input type="submit" class="BbuySel" value="Egy összegben fizetek">
+                    </form>
         
         <h1>Hitel vállalás</h1>
         <div class="hitelList">
@@ -31,7 +42,7 @@
                     <form method="POST" action='{{route("rendelesLeadasaName")}}' >
                     <input type="hidden" id="modell" name="modell">
                     <input type="hidden" id="felszerelesCsomag" name="felszerelesCsomag">
-                    <input type="hidden" id="FId" name="FId">
+                    <input type="hidden" id="FId" name="FId" value="{{ Auth::user()->id }}">
                     <input type="hidden" id="fényId" name="fényId">
                     <input type="hidden" id="beltérId" name="beltérId">
                     <input type="hidden" id="összár" name="összár">
@@ -41,14 +52,6 @@
                     </form>
                 </div>
                 </div>
-<!----        <table class="hitelList">
-                <th>Kezdőrészlet</th><th>Futamidő</th>
-                <tr class="hitel">
-                    <td class="hitelStarter"></td>
-                    <td class="hitelTime"></td>
-                    <td><button class="hitelSel">Ezt az opciót választom</button></td>
-                </tr>
-        </table>-->
     </div>
                     @else
                         <h1>Jelentkezz be a folytatáshoz</h1>  

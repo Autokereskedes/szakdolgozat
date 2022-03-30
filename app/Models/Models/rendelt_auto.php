@@ -17,13 +17,12 @@ class rendelt_auto extends Model
             'rendazon',
             'modell',
             'felszerelesCsomag',
-            'FId',
-            'fényId',
-            'beltérId',
+            'userId',
+            'fenyezes',
+            'belter',
             'összár',
             'hazon',
             'státusz',
-            'ajánlatDátum',
             'created_at',
             'updated_at'
     ];

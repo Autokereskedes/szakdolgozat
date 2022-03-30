@@ -22,4 +22,10 @@ $(function(){
         })
         sablonModell.remove();
     }
+    
+        $("#Bmodell").val(localStorage.getItem('modell'));
+        $("#BfelszerelesCsomag").val(localStorage.getItem('csomag'));
+        $("#BfényId").val(localStorage.getItem('szinId'));
+        $("#BbeltérId").val(localStorage.getItem('belterId'));
+        $("#Bösszár").val(localStorage.getItem('ar'));
 });

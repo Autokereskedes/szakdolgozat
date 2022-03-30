@@ -6,6 +6,7 @@
     localStorage.setItem('belter', 'Fekete');
     localStorage.setItem('belterAnyag', 'ARTICO műbőr / DINAMICA mikros');
     localStorage.setItem('belterPrice', '0');
+    localStorage.setItem('belterId', '1');
     var jelArInt=Number(jelArSegedInt)-Number(localStorage.getItem('belterPrice'));
     localStorage.setItem('ar', jelArInt);
     $('.osszAr').html("Jelenlegi ár: "+localStorage.getItem('ar') + " Ft");

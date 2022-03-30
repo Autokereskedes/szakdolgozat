@@ -22,7 +22,6 @@ class Interior{
         this.interiorName.html(ertekek.szin);
         this.interiorPrice.html(ertekek.ár+" Ft");
         this.interiorType.html(ertekek.anyag);
-        //this.kép.attr("src", "http://127.0.0.1:8000/images/"+ertekek.kép);
         $(".interiorNameH").html(localStorage.getItem('belter'));
         $(".interiorTypeH").html(localStorage.getItem('belterAnyag'));
         $(".interiorPriceH").html(localStorage.getItem('belterPrice')+ " Ft");
@@ -36,6 +35,7 @@ class Interior{
         localStorage.setItem('belter', this.adat.szin);
         localStorage.setItem('belterAnyag', this.adat.anyag);
         localStorage.setItem('belterPrice', this.adat.ár);
+        localStorage.setItem('belterId', this.adat.beltérId);
         $(".interiorNameH").html(localStorage.getItem('belter'));
         $(".interiorTypeH").html(localStorage.getItem('belterAnyag'));
         $(".interiorPriceH").html(localStorage.getItem('belterPrice')+ " Ft");

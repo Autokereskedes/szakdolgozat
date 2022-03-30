@@ -17,10 +17,6 @@ class Hitel{
         this.státuszinp=this.elem.find("#státusz");
 
         this.setAdat(this.adat);
-
-        this.hitelValGomb.on("click", ()=>{
-            this.hitelKattintTrigger();
-        });
     }
 
     setAdat(ertekek){
@@ -32,22 +28,13 @@ class Hitel{
         this.futamido.html(ertekek.futamidő + " hónapos futamidővel: " + havi + " Ft / Hónap");
         let kezdoSeged = Number(haviSeged)*Number(ertekek.kezdőrészlet);
         this.kezoreszlet.html("Kezdő részlet: " + kezdoSeged + " Ft | " + ertekek.kezdőrészlet + "%");
-        //this.kép.attr("src", "http://127.0.0.1:8000/images/"+ertekek.kép);
         
         this.modellinp.val(localStorage.getItem('modell'));
-        this.felszerelesCsomaginp.val("1 Economy");
-        this.FIdinp.val("1");
-        this.fényIdinp.val("1");
-        this.beltérIdinp.val("1");
-        this.összárinp.val("1");
-        this.hazoninp.val("1");
-        this.státuszinp.val("1");
-    }
-
-    hitelKattintTrigger(){
-        let esemeny = new CustomEvent("hitelKonfiguralas", {detail:this.adat});
-        window.dispatchEvent(esemeny);
-        
-
+        this.felszerelesCsomaginp.val(localStorage.getItem('csomag'));
+        this.fényIdinp.val(localStorage.getItem('szinId'));
+        this.beltérIdinp.val(localStorage.getItem('belterId'));
+        this.összárinp.val(haviTelj);
+        this.hazoninp.val(ertekek.hazon);
+        this.státuszinp.val("Kezdő: " + kezdoSeged + "Ft, Futam: "+ertekek.futamidő+"Hónap, Havi: "+havi+"Ft");
     }
 }

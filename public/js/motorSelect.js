@@ -17,7 +17,6 @@ class Motor{
     setAdat(ertekek){
         this.motor.html(ertekek.motor);
         this.kép.attr("src",  "http://127.0.0.1:8000/images/sablon.jpg");
-        //this.kép.attr("src",  "http://127.0.0.1:8000/images/"+ertekek.kép);
         this.teljesítmény.html(ertekek.teljesítmény);
         this.üzemanyag.html(ertekek.üzemanyag);
         this.váltó.html(ertekek.váltó);

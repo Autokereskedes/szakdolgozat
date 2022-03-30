@@ -19,7 +19,6 @@ class Color{
     setAdat(ertekek){
         this.színName.html(ertekek.szin);
         this.színPrice.html(ertekek.ár+" Ft");
-        //this.kép.attr("src", "http://127.0.0.1:8000/images/"+ertekek.kép);
         
         $(".colorNameH").html(localStorage.getItem('szin'));
         $(".colorPriceH").html(localStorage.getItem('szinPrice')+ " Ft");
@@ -32,6 +31,7 @@ class Color{
         $(".osszAr").html("Jelenlegi ár a válaszott Színnel: "+ jelAr + " Ft");
         localStorage.setItem('szin', this.adat.szin);
         localStorage.setItem('szinPrice', this.adat.ár);
+        localStorage.setItem('szinId', this.adat.fényId);
         $(".colorNameH").html(localStorage.getItem('szin'));
         $(".colorPriceH").html(localStorage.getItem('szinPrice')+ " Ft");
     }

@@ -22,7 +22,6 @@
     <div class="csomagContainer">
         <div class="csomag">
             <h3 class="csomagName">csomag neve</h3>
-            <img class="csomagPic" src="{{url('images/sablon.jpg')}}" alt="" width="10%">
             <p class="csomagType">csomag leirasa</p>
             <p class="csomagPrice">csomag ára</p>
             <button class="csomagSel">Választás</button>

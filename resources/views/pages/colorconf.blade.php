@@ -5,6 +5,7 @@
     var jelArSegedCol=Number(localStorage.getItem('ar'))-Number(localStorage.getItem('szinPrice'));
     localStorage.setItem('szin', 'Polár-fehér uni fényezés');
     localStorage.setItem('szinPrice', '0');
+    localStorage.setItem('szinId', '1');
     var jelArCol=Number(jelArSegedCol)-Number(localStorage.getItem('interiorPrice'));
     localStorage.setItem('ar', jelArCol);
 </script>

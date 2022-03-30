@@ -3,14 +3,11 @@ class Csomag{
         this.elem = elem;
 
         this.csomagName = this.elem.children(".csomagName");
-        this.kép = this.elem.children(".csomagPic");
         this.csomagType = this.elem.children(".csomagType");
         this.csomagPrice = this.elem.children(".csomagPrice");
-        this.csomagValGomb = this.elem.children(".csomagSel");
-        
-        
+        this.csomagValGomb = this.elem.children(".csomagSel");        
         this.adat = adat;
-
+        
         this.setAdat(this.adat);
 
         this.csomagValGomb.on("click", ()=>{
@@ -22,7 +19,6 @@ class Csomag{
         this.csomagName.html(ertekek.felszerelesCsomag);
         this.csomagPrice.html(ertekek.ár+" Ft");
         this.csomagType.html(ertekek.leírás);
-        //this.kép.attr("src", "http://127.0.0.1:8000/images/"+ertekek.kép);
         $(".csomagNameH").html(localStorage.getItem('csomag'));
         $(".csomagTypeH").html(localStorage.getItem('csomagType'));
         $(".csomagPriceH").html(localStorage.getItem('csomagPrice')+ " Ft");

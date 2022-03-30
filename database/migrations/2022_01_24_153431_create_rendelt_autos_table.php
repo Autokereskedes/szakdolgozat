@@ -28,7 +28,7 @@ class CreateRendeltAutosTable extends Migration
             $table->integer('összár');
             $table->integer('hazon')->unsigned();
             $table->foreign('hazon')->references('hazon')->on('hitels');
-            $table->char('státusz', 20);
+            $table->char('státusz', 50);
             $table->timestamps();
         });
     }
