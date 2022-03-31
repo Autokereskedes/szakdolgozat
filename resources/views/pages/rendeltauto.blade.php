@@ -42,7 +42,7 @@
             @if(Auth::user()->admin===0)
             <table class="rendeltAutok">
                 <input type="hidden" id="user" name="user" value="{{ Auth::user()->id }}">
-                <tr><th>Modell</th><th>Ár</th><th>Státusz</th></tr>
+                <tr><th>Modell</th><th>Csomag</th><th>Fényezés</th><th>Beltér</th><th>Ár</th><th>Státusz</th></tr>
                 <tr class="rendeltAuto"><td class="rmodell"></td><td class="rcsomag"></td><td class="rszin"></td><td class="rbelso"></td><td class="rar"></td><td class="rstatus"></td>
                 <td class="rdelete">
                 <form method="POST" action='{{route("rendelesTorleseName")}}' >
