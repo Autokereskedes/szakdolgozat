@@ -31,3 +31,4 @@ Route::get('hitels', [ConfiguratorController::class, 'hitel_listaz']);
 Route::post('rendelesLeadasa', [ConfiguratorController::class,'rendeles'])->name('rendelesLeadasaName');
 Route::get('rendelt', [ConfiguratorController::class, 'rendeltAuto_listaz']);
 Route::get('rendeltA', [ConfiguratorController::class, 'rendeltAuto_listaz_Admin']);
+Route::post('rendelesTorlese', [ConfiguratorController::class,'rendelesT'])->name('rendelesTorleseName');

@@ -9,7 +9,7 @@ class Rendelt{
         this.csomag = this.elem.children(".rcsomag"); 
         this.szin = this.elem.children(".rszin"); 
         this.belso = this.elem.children(".rbelso");  
-        this.rendazonInp = this.elem.find(".rendazon");
+        this.rendazonInp = this.elem.find("#rendazon");
         this.adat = adat;
         this.setAdat(this.adat);
     }

@@ -3,7 +3,7 @@ $(function(){
     const modellek = [];
     const szuloModell = $("#jarmu_lista");
     const sablonModell = $("#sablon_auto");
-    let apivegpont = "http://127.0.0.1:8000/api/";
+    let apivegpont = "/api/";
     //let apiRendez = 'http://127.0.0.1:8000/api/modells/'+osztaly;
 
     ajaxhivas.getAdat(apivegpont+"modells", modellek, kiir);

@@ -42,6 +42,7 @@ Route::get('/AdminModell', [AdminController::class,'modellList'], function () {
 });
 
 Route::post('/setAdminRoute/{id}', [AdminController::class,'setAdmin'])->name('setAdmin');
+Route::post('/deleteUserRoute/{id}', [AdminController::class,'deleteUser'])->name('deleteUser');
 
 Route::get('/colorConfig', function () {
     return view('pages/colorconf');

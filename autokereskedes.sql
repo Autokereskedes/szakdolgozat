@@ -350,7 +350,7 @@ CREATE TABLE `rendelt_autos` (
   `belter` int(10) UNSIGNED NOT NULL,
   `összár` int(11) NOT NULL,
   `hazon` int(10) UNSIGNED NOT NULL,
-  `státusz` char(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `státusz` char(80) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

@@ -3,7 +3,7 @@ $(function(){
     const csomags = [];
     const szuloModell = $(".csomagContainer");
     const sablonModell = $(".csomag");
-    let apivegpont = "http://127.0.0.1:8000/api/";
+    let apivegpont = "/api/";
     csomagAjaxhivas.getAdat(apivegpont+"felszereless" , csomags , kiir);
     
     function kiir(){

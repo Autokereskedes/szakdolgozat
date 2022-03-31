@@ -3,7 +3,7 @@ $(function(){
     const rendelesek = [];
     const szuloModell = $(".rendeltAutok");
     const sablonModell = $(".rendeltAuto");
-    let apivegpont = "http://127.0.0.1:8000/api/";
+    let apivegpont = "/api/";
     let userId = $("#user").val();
     rendeltAjaxhivas.getAdat(apivegpont+"rendelt"+"?q="+userId, rendelesek , kiir);
     

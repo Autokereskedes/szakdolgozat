@@ -3,7 +3,7 @@ $(function(){
     const interiors = [];
     const szuloModell = $(".interiorContainer");
     const sablonModell = $(".interior");
-    let apivegpont = "http://127.0.0.1:8000/api/";
+    let apivegpont = "/api/";
     interiorAjaxhivas.getAdat(apivegpont+"interiors" , interiors , kiir);
     
     function kiir(){

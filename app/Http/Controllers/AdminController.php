@@ -16,7 +16,12 @@ class AdminController extends Controller
         $userItem = User::find($id);
         $userItem->admin = 1;
         $userItem->save();
-        return redirect('pages/admin/AdminUser');   
+        return redirect('/AdminUser');   
+    }
+    public function deleteUser($id) {
+        $userItem = User::find($id);
+        $userItem->delete();
+        return redirect('/AdminUser');   
     }
     public function modellList(){
         return view('pages/admin/AdminModell', ['userItems' => modell::get()]);

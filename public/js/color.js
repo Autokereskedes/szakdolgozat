@@ -3,7 +3,7 @@ $(function(){
     const colors = [];
     const szuloModell = $(".colorContainer");
     const sablonModell = $(".color");
-    let apivegpont = "http://127.0.0.1:8000/api/";
+    let apivegpont = "/api/";
     colorAjaxhivas.getAdat(apivegpont+"colors" , colors , kiir);
     
     function kiir(){

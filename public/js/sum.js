@@ -12,7 +12,7 @@ $(function(){
     const hitels = [];
     const szuloModell = $(".hitelList");
     const sablonModell = $(".hitel");
-    let apivegpont = "http://127.0.0.1:8000/api/";
+    let apivegpont = "/api/";
     hitelAjaxhivas.getAdat(apivegpont+"hitels" , hitels , kiir);
     
     function kiir(){

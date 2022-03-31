@@ -98,7 +98,7 @@ public function rendeltAuto_listaz(Request $request){
     $q=$request->query('q');
     if($q){
         $rendelt = DB::table('rendelt_autos')
-        ->select('modell', 'felszerelesCsomag' , 'userId', 'fenyezes' , 'belter' , 'összár', 'hazon' , 'státusz')
+        ->select('rendazon','modell', 'felszerelesCsomag' , 'userId', 'fenyezes' , 'belter' , 'összár', 'hazon' , 'státusz')
         ->where('userId', 'LIKE', $q)
         ->distinct();
         }
@@ -107,9 +107,16 @@ public function rendeltAuto_listaz(Request $request){
 
     public function rendeltAuto_listaz_Admin(){
         $rendeltA = DB::table('rendelt_autos')
-        ->select('modell', 'felszerelesCsomag' , 'userId', 'fenyezes' , 'belter' , 'összár', 'hazon' , 'státusz')
+        ->select('rendazon','modell', 'felszerelesCsomag' , 'userId', 'fenyezes' , 'belter' , 'összár', 'hazon' , 'státusz')
         ->distinct()
         ->get();
         return  $rendeltA;
     }
+    public function rendelesT(Request $request){
+        $rendeltT = DB::table('rendelt_autos')
+        ->select('rendazon')
+        ->where('rendazon','LIKE', $request->rendazon);
+        $rendeltT->delete();
+        return redirect('/rendeltAuto');
+        }
 }

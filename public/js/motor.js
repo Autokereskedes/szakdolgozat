@@ -3,7 +3,7 @@ $(function(){
     const motorok = [];
     const szuloModell = $(".motorContainer");
     const sablonModell = $(".motor");
-    let apivegpont = "http://127.0.0.1:8000/api/";
+    let apivegpont = "/api/";
     motorAjaxhivas.getAdat(apivegpont+"motors" + "?q=" + localStorage.getItem('motor') , motorok , kiir);
     
     function kiir(){

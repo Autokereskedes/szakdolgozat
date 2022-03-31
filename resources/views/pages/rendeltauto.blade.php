@@ -31,7 +31,11 @@
                 <tr><th>Modell</th><th>Felhasználó</th><th>Csomag</th><th>Fényezés</th><th>Beltér</th><th>Ár</th><th>Státusz</th></tr>
                 <tr class="rendeltAuto"><td class="rmodell"><td class="ruser"></td><td class="rcsomag"></td><td class="rszin"></td><td class="rbelso"></td><td class="rar"></td><td class="rstatus"></td>
                 <td class="rdelete">
-                    <input type="submit" class="rdeleteBtn" value="Rendelés törlése">
+                <form method="POST" action='{{route("rendelesTorleseName")}}' >
+                    {{ csrf_field() }}
+                    <input type="hidden" id="rendazon" name="rendazon">
+                    <button type="submit" style="width:100%;">Rendelés törlése</button>
+                </form>
                 </td></tr>
             </table>        
             @endif
@@ -41,7 +45,11 @@
                 <tr><th>Modell</th><th>Ár</th><th>Státusz</th></tr>
                 <tr class="rendeltAuto"><td class="rmodell"></td><td class="rcsomag"></td><td class="rszin"></td><td class="rbelso"></td><td class="rar"></td><td class="rstatus"></td>
                 <td class="rdelete">
-                    <input type="submit" class="rdeleteBtn" value="Rendelés törlése">
+                <form method="POST" action='{{route("rendelesTorleseName")}}' >
+                    {{ csrf_field() }}
+                    <input type="hidden" id="rendazon" name="rendazon">
+                    <button type="submit" style="width:100%;">Rendelés törlése</button>
+                </form>
                 </td></tr>
             </table>   
             @endif

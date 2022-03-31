@@ -28,12 +28,16 @@
                         <div class="flex" style="align-items: center;">
                             <p>
                                 <table>
-                                    <tr><th>ID</th><th>Felhasználónév</th><th>E-mail</th><th>Jogkör</th><th>Jogkör módosítása</th></tr>
+                                    <tr><th>ID</th><th>Felhasználónév</th><th>E-mail</th><th>Jogkör</th><th>Jogkör módosítása</th><th>Felhasználó törlése</th></tr>
                                     @foreach ($userItems as $userItem)
                                     <tr><th>{{ $userItem->id}}</th><td>{{ $userItem->name}}</td><td>{{ $userItem->email}}</td><td>{{ $userItem->admin}}</td>
                                     <td><form method="post" action="{{ route('setAdmin', $userItem->id) }}" accept-charset="UTF-8">
                                         {{ csrf_field() }}
                                         <button type="submit" style="width:100%;">Módosítás</button>
+                                        </form></td>
+                                        <td><form method="post" action="{{ route('deleteUser', $userItem->id) }}" accept-charset="UTF-8">
+                                        {{ csrf_field() }}
+                                        <button type="submit" style="width:100%;">Törlés</button>
                                         </form></td></tr>
                                     @endforeach
                                 </table>
