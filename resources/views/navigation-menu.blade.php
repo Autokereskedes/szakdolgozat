@@ -13,6 +13,9 @@
                     <x-jet-nav-link href="{{url('/')}}" :active="request()->routeIs('/')">
                         {{ __('Kezdőlap') }}
                     </x-jet-nav-link>
+                    <x-jet-nav-link href="{{url('/model')}}" :active="request()->routeIs('/model')">
+                        {{ __('Konfigurátor') }}
+                    </x-jet-nav-link>
                 </div>
             </div>
 

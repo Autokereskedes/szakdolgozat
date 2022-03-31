@@ -31,6 +31,7 @@
             <ul>
                 <li><a id="nav_hover" href="{{url('/')}}">Kezdőlap</a></li>
                 <li><a id="nav_hover" href="{{url('/model')}}">Konfigurátor</a></li>
+                <li><a id="nav_hover" href="{{url('/rendeltAuto')}}">Rendelt Autók</a></li>
                 <li id="user">@if (Route::has('login'))
                     @auth
                         <a id="nav_hover" href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Profil</a>
