@@ -14,7 +14,7 @@
     <img class="selectedKep" src="" alt="" width="25%">
     <p class="osszAr">Jelenlegi ár: 1000 Ft</p>
     <div class="sum">
-        <Table>
+        <Table class="sumTable">
             <h1>Összegzés</h1>
             <th>Motor</th><th>Fényezés</th><th>Beltér</th><th>Csomag</th><tr>
             <td class="sumMotorName">td</td> <td class="sumColorName">td</td> <td class="sumInteriorName">td</td> <td class="sumPackageName">td</td> <tr>
@@ -31,10 +31,8 @@
                     <input type="hidden" id="Bstátusz" name="státusz" value="Egy összegben tervezi kifizetni.">
                     <input type="submit" class="BbuySel" value="Egy összegben fizetek">
                     </form>
-        
-        <h1>Hitel vállalás</h1>
+        <h1 class="hitelText">Hitel vállalás</h1>
         <div class="hitelList">
-                <p>Kezdőrészlet</p><p>Futamidő</p><br>
                 <div class="hitel">
                     <p class="hitelStarter"></p>
                     <p class="hitelTime"></p>

@@ -181,6 +181,22 @@ article{
 .sum table{
     text-align:center;
 }
+.hitelList{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.hitel{
+    border: 1px solid white;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+.hitelText{
+    text-align: center;
+}
+.sumTable, td, th{
+    border: 1px solid white;
+}
 /*--------------FOOTER-------------*/
 footer{
     border-top:1px solid lightgrey;

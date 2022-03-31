@@ -70,3 +70,4 @@ Route::get('/sumConfig', function () {
 Route::get('/rendeltAuto', function () {
     return view('pages/rendeltauto');
 });
+
