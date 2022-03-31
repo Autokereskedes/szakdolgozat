@@ -91,7 +91,25 @@ public function rendeles(Request $request){
     $rendA->hazon = $request->hazon;
     $rendA->státusz = $request->státusz;
     $rendA->save();
-    return redirect('/');
+    return redirect('/rendeltAuto');
     }
-    
+
+public function rendeltAuto_listaz(Request $request){
+    $q=$request->query('q');
+    if($q){
+        $rendelt = DB::table('rendelt_autos')
+        ->select('modell', 'felszerelesCsomag' , 'userId', 'fenyezes' , 'belter' , 'összár', 'hazon' , 'státusz')
+        ->where('userId', 'LIKE', $q)
+        ->distinct();
+        }
+    return response()->json($rendelt->get());
+    }
+
+    public function rendeltAuto_listaz_Admin(){
+        $rendeltA = DB::table('rendelt_autos')
+        ->select('modell', 'felszerelesCsomag' , 'userId', 'fenyezes' , 'belter' , 'összár', 'hazon' , 'státusz')
+        ->distinct()
+        ->get();
+        return  $rendeltA;
+    }
 }

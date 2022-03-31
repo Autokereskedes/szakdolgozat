@@ -66,3 +66,7 @@ Route::get('/packageConfig', function () {
 Route::get('/sumConfig', function () {
     return view('pages/sumconf');
 });
+
+Route::get('/rendeltAuto', function () {
+    return view('pages/rendeltauto');
+});

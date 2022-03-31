@@ -29,3 +29,5 @@ Route::get('interiors', [ConfiguratorController::class, 'interior_listaz']);
 Route::get('felszereless', [ConfiguratorController::class, 'csomag_listaz']);
 Route::get('hitels', [ConfiguratorController::class, 'hitel_listaz']);
 Route::post('rendelesLeadasa', [ConfiguratorController::class,'rendeles'])->name('rendelesLeadasaName');
+Route::get('rendelt', [ConfiguratorController::class, 'rendeltAuto_listaz']);
+Route::get('rendeltA', [ConfiguratorController::class, 'rendeltAuto_listaz_Admin']);

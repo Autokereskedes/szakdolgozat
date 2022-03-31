@@ -20,14 +20,18 @@
                 
             @if(Auth::user()->admin===1)
             <ul>
+                <li><a id="nav_hover" href="{{url('/rendeltAuto')}}">Rendelt Autók</a></li>
                 <li><a id="nav_hover" href="{{url('/AdminUser')}}">Felhasználók</a></li>
                 <li><a id="nav_hover" href="{{url('/AdminModell')}}">Modellek</a></li>
-                <li><a id="nav_hover" href="{{url('/dashboard')}}">Vissza</a></li>
+                <li><a id="nav_hover" href="{{url('/model')}}">Vissza a konfigurátorhoz</a></li>
             </ul>
             @endif
             @if(Auth::user()->admin===0)
 
-            <h1>Yo</h1>
+            <ul>
+                <li><a id="nav_hover" href="{{url('/rendeltAuto')}}">Rendelt Autók</a></li>
+                <li><a id="nav_hover" href="{{url('/model')}}">Vissza a konfigurátorhoz</a></li>
+            </ul>
 
             @endif
         </div>
