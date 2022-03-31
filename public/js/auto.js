@@ -18,7 +18,7 @@ class Auto{
 
     setAdat(ertekek){
         this.modell.html(ertekek.modell);
-        this.alapár.html(ertekek.alapár);
+        this.alapár.html(ertekek.alapár+" Ft");
         this.kép.attr("src", "http://127.0.0.1:8000/images/"+ertekek.kép);
     }
 
