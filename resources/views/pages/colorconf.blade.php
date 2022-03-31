@@ -10,7 +10,7 @@
     localStorage.setItem('ar', jelArCol);
 </script>
 <article class="color_konfigurator_container">
-    <h1 style="padding-left:5%;">Autó fényezése</h1>
+    <h1 style="padding-left:3%;">Autó fényezése</h1>
     <div id="aktAuto">
         <img class="selectedKep" src="" alt="" width="100%">
         <div id="valasztottFenyezes">
@@ -21,7 +21,7 @@
         </div>
     </div>
     <div class="colorContainer">
-        <div class="color">
+        <div class="color" style="padding:10px;">
             <h3 class="colorName">Szín neve</h3>
             <img class="colorPic" src="{{url('images/sablon.jpg')}}" alt="" width="10%">
             <p class="colorPrice">Szín ára</p>

@@ -12,7 +12,7 @@
     $('.osszAr').html("Jelenlegi ár: "+localStorage.getItem('ar') + " Ft");
 </script>
 <article class="interior_konfigurator_container">
-    <h1>Beltér testreszabása</h1>
+    <h1 style="padding-left:3%;">Beltér testreszabása</h1>
     <div id="aktAuto">
         <img class="selectedKep" src="" alt="" width="100%">
         <div id="valasztottBelter">
@@ -24,7 +24,7 @@
         </div>
     </div>
     <div class="interiorContainer">
-        <div class="interior">
+        <div class="interior" style="padding:10px;">
             <h3 class="interiorName">Beltér színe</h3>
             <img class="interiorPic" src="{{url('images/sablon.jpg')}}" alt="" width="10%">
             <p class="interiorType">Beltér anyaga</p>

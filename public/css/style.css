@@ -86,6 +86,9 @@ header{
 #udvozlo{
     text-align:center;
 }
+.welcome_container{
+    height:768px;
+}
 article, section{
     background-color:black;
     color:white;
@@ -150,6 +153,8 @@ article{
 }
 .osszAr{
     float:right;
+    font-size:20px;
+    padding-right:10px;
 }
 .color_konfigurator_container{
     
@@ -160,14 +165,18 @@ article{
     text-align:center;
 }
 .motor_konfigurator_container{
-    margin:20px;
+    height:768px;
 }
 .interiorContainer{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .interior_konfigurator_container{
-    margin: 20px 20px 20px 20px;
+    
+}
+.csomagContainer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .sum table{
     text-align:center;
@@ -197,6 +206,15 @@ footer{
         font-size:10px;
         margin:0;
     }
+    .colorContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .interiorContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .csomagContainer{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 @media screen and (max-width: 593px) {
     #sablon_auto{
@@ -211,5 +229,6 @@ footer{
     nav ul{
         text-align:center;
     }
+    
 }
 /*---------reszponzivitás vége--------*/

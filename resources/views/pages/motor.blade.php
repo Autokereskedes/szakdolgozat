@@ -2,7 +2,7 @@
 <script src="{{ url('js/motorSelect.js') }}"></script>
 <script src="{{ url('js/motor.js') }}"></script>
 <article class="motor_konfigurator_container">
-    <h1>Motor áttekintése</h1>
+    <h1 style="padding-left:3%;">Motor áttekintése</h1>
     <div class="motorContainer">
         <div>
             <h2 class="carName">Választott autó neve</h2>

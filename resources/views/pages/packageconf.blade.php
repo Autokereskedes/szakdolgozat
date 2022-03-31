@@ -12,17 +12,21 @@
     
 </script>
 <article class="package_konfigurator_container">
-    <h1>Csomag választása</h1>
-    <h2 class="carName">Választott autó neve</h2>
-    <h2 class="csomagNameH">Választott csomag neve</h2><br>
-    <h2 class="csomagTypeH">Választott csomag leírása</h2><br>
-    <h2 class="csomagPriceH">Választott csomag ára</h2><br>
-    <p class="osszAr">Jelenlegi ár: 1000 Ft</p>
-    <img class="selectedKep" src="" alt="" width="25%">
+    <h1 style="padding-left:3%;">Csomag választása</h1>
+    <div id="aktAuto">
+        <img class="selectedKep" src="" alt="" width="100%">
+        <div>
+            <h2 class="carName">Választott autó neve</h2>
+            <h2 class="csomagNameH">Választott csomag neve</h2><br>
+            <h2 class="csomagTypeH" style="text-align:justify;">Választott csomag leírása</h2><br>
+            <h2 class="csomagPriceH">Választott csomag ára</h2><br>
+            <p class="osszAr">Jelenlegi ár: 1000 Ft</p>
+        </div>
+    </div>
     <div class="csomagContainer">
-        <div class="csomag">
+        <div class="csomag" style="padding:10px;">
             <h3 class="csomagName">csomag neve</h3>
-            <p class="csomagType">csomag leirasa</p>
+            <p class="csomagType" style="text-align:justify;">csomag leirasa</p>
             <p class="csomagPrice">csomag ára</p>
             <button class="csomagSel">Választás</button>
         </div>
