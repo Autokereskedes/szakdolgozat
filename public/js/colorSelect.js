@@ -28,7 +28,7 @@ class Color{
         let esemeny = new CustomEvent("colorKonfiguralas", {detail:this.adat});
         window.dispatchEvent(esemeny);
         var jelAr=Number(localStorage.getItem('ar'))+Number(this.adat.ár);
-        $(".osszAr").html("Jelenlegi ár a válaszott Színnel: "+ jelAr + " Ft");
+        $(".osszAr").html(" Jelenlegi ár a válaszott Színnel: "+ jelAr + " Ft");
         localStorage.setItem('szin', this.adat.szin);
         localStorage.setItem('szinPrice', this.adat.ár);
         localStorage.setItem('szinId', this.adat.fényId);

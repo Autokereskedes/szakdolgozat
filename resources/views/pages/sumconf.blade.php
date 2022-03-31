@@ -34,7 +34,6 @@
         
         <h1>Hitel vállalás</h1>
         <div class="hitelList">
-                <p>Kezdőrészlet</p><p>Futamidő</p><br>
                 <div class="hitel">
                     <p class="hitelStarter"></p>
                     <p class="hitelTime"></p>

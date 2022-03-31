@@ -23,14 +23,14 @@ class ConfiguratorController extends Controller
       return  $modells;
   }
 
-  public function modellRendez($osztaly){
+  /*public function modellRendez($osztaly){
     $autoOsztaly = DB::table('modells')
     ->select('modell')
     ->distinct()
     ->whereRaw('modell', 'LIKE', '%'.$osztaly.'%')
     ->get();
     return  $autoOsztaly;
-}
+}*/
   public function modell_rendez(Request $request){
     $q=$request->query('q');
     if($q){
