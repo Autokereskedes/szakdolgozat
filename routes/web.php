@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ListazController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ConfiguratorController;
 
@@ -23,12 +22,6 @@ Route::get('/model', function () {
     return view('pages/configurator');
 });
 
-/*Route::get('/model', [ListazController::class,'index'], function () {
-    return view('pages/configurator');
-});*/
-
-//Route::get('/model', [ModellController::class,'modell_listaz']);
-
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
@@ -42,6 +35,7 @@ Route::get('/AdminModell', [AdminController::class,'modellList'], function () {
 });
 
 Route::post('/setAdminRoute/{id}', [AdminController::class,'setAdmin'])->name('setAdmin');
+
 Route::post('/deleteUserRoute/{id}', [AdminController::class,'deleteUser'])->name('deleteUser');
 
 Route::get('/colorConfig', function () {
