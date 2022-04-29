@@ -22,7 +22,6 @@ class ConfiguratorController extends Controller
       ->get();
       return  $modells;
   }
-  
   public function modell_rendez(Request $request){
     $q=$request->query('q');
     if($q){

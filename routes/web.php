@@ -21,7 +21,6 @@ Route::get('/', function () {
 Route::get('/model', function () {
     return view('pages/configurator');
 });
-
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
@@ -35,7 +34,6 @@ Route::get('/AdminModell', [AdminController::class,'modellList'], function () {
 });
 
 Route::post('/setAdminRoute/{id}', [AdminController::class,'setAdmin'])->name('setAdmin');
-
 Route::post('/deleteUserRoute/{id}', [AdminController::class,'deleteUser'])->name('deleteUser');
 
 Route::get('/colorConfig', function () {
